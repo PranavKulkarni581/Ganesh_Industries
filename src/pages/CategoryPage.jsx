@@ -38,7 +38,6 @@ export default function CategoryPage() {
   const { category: categoryId } = useParams();
   const refHeader = useScrollReveal();
   const refFilters = useScrollReveal();
-  const refGrid = useScrollReveal();
 
   /* ── Data ───────────────────────────────────────────────────── */
   const category  = getCategoryById(categoryId);
@@ -217,7 +216,7 @@ export default function CategoryPage() {
       </div>
 
       {/* ── Product grid ─────────────────────────────────────── */}
-      <div ref={refGrid}>
+      <div key={`${activeTypes.join(',')}-${activeSize}`} style={{ animation: 'fadeIn 0.25s ease' }}>
         {products.length === 0 ? (
           <div
             className="rounded-2xl p-14 flex flex-col items-center gap-4 text-center"
@@ -249,7 +248,7 @@ export default function CategoryPage() {
                   screws={false}
                   vents={false}
                   padding="none"
-                  className={`flex flex-col overflow-hidden h-full reveal reveal-delay-${(i % 3) + 1}`}
+                  className="flex flex-col overflow-hidden h-full"
                 >
                   {/* Product image */}
                   <div className="overflow-hidden" style={{ height: 180 }}>

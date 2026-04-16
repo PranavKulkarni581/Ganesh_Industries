@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import {
   ArrowLeft, MessageCircle, Phone,
   Package, CheckCircle2, Tag,
-  Layers, Ruler, Factory, ArrowRight,
+  Layers, Ruler, Factory, ArrowRight, Settings2, Palette, Maximize2, Stamp, AlignLeft, BoxSelect,
 } from 'lucide-react';
 import { Card, Button, Badge, IconContainer } from '../components/ui';
 import { getCategoryById } from '../data/products';
@@ -54,6 +54,7 @@ export default function ProductDetailPage() {
   const refHero = useScrollReveal();
   const refDetails = useScrollReveal();
   const refTech = useScrollReveal();
+  const refCustom = useScrollReveal();
   const refCTA = useScrollReveal();
   const refRelated = useScrollReveal();
 
@@ -403,6 +404,112 @@ export default function ProductDetailPage() {
           </div>
         </Card>
       </section>
+
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          §3.5  FULLY CUSTOMIZABLE
+      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <section ref={refCustom} className="reveal">
+        <Card screws={false} vents={false} padding="lg" hoverable={false}>
+            {/* Header */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+                style={{
+                  background: 'linear-gradient(135deg, #0B5ED7 0%, #14B8A6 100%)',
+                }}
+              >
+                <Settings2 size={22} color="#fff" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span
+                    className="font-mono text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full"
+                    style={{
+                      background: 'linear-gradient(135deg, #0B5ED7, #14B8A6)',
+                      color: '#fff',
+                    }}
+                  >
+                    100% Customizable
+                  </span>
+                </div>
+                <h2
+                  className="text-2xl md:text-3xl font-extrabold tracking-tight"
+                  style={{ color: 'var(--color-text-primary)' }}
+                >
+                  Tailored to{' '}
+                  <span style={{ color: 'var(--color-accent)' }}>Your Needs</span>
+                </h2>
+                <p
+                  className="text-sm mt-1"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                >
+                  Every {product.name} can be fully customized — from colour and branding to size and capacity — to match your exact business requirements.
+                </p>
+              </div>
+            </div>
+
+            {/* Customization options grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              {[
+                { icon: Palette,   title: 'Custom Colour',    desc: 'Choose any colour to match your brand identity.' },
+                { icon: Stamp,     title: 'Logo & Branding',  desc: 'Emboss or print your logo directly on the product.' },
+                { icon: Maximize2, title: 'Custom Size',      desc: 'Any capacity or dimension available on request.' },
+                { icon: BoxSelect, title: 'Cap / Lid Style',  desc: 'Wide-mouth, tamper-proof, or custom closures.' },
+                { icon: AlignLeft, title: 'Label Design',     desc: 'Full wrap-around label printing support.' },
+                { icon: Package,   title: 'Bulk Quantity',    desc: 'Flexible MOQ — suitable for small & large orders.' },
+              ].map(({ icon: Icon, title, desc }) => (
+                <div
+                  key={title}
+                  className="flex flex-col gap-2 p-4 rounded-xl"
+                  style={{
+                    background: 'var(--color-bg)',
+                    border: '1px solid rgba(11,94,215,0.12)',
+                  }}
+                >
+                  <div
+                    className="w-8 h-8 rounded-lg flex items-center justify-center"
+                    style={{ background: 'linear-gradient(135deg,#EFF6FF,#E0F2FE)' }}
+                  >
+                    <Icon size={15} color="#0B5ED7" />
+                  </div>
+                  <span
+                    className="text-sm font-bold"
+                    style={{ color: 'var(--color-text-primary)' }}
+                  >
+                    {title}
+                  </span>
+                  <span
+                    className="text-xs leading-relaxed"
+                    style={{ color: 'var(--color-text-secondary)' }}
+                  >
+                    {desc}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom note */}
+            <div
+              className="mt-6 pt-5 flex flex-col sm:flex-row items-center justify-between gap-4"
+              style={{ borderTop: '1px solid rgba(181,201,219,0.4)' }}
+            >
+              <p className="text-xs" style={{ color: 'var(--color-text-secondary)' }}>
+                📞 Share your specifications via WhatsApp or call — we'll get back with a quote within 24 hours.
+              </p>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white shrink-0 transition-all duration-200 hover:-translate-y-[1px]"
+                style={{
+                  background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
+                }}
+              >
+                <MessageCircle size={13} /> Discuss Customization
+              </a>
+            </div>
+          </Card>
+        </section>
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           §4  FINAL CTA

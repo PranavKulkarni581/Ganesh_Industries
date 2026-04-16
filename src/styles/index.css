@@ -390,4 +390,10 @@ strong {
   -webkit-backdrop-filter: blur(12px);
 }
 
+/* ── Filter grid fade-in ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 } /* end @layer components */
