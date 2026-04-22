@@ -44,7 +44,7 @@ export default function ProductsPage() {
               className={`flex flex-col overflow-hidden h-full reveal reveal-delay-${(i % 3) + 1}`}
             >
               {/* ── Cover image ─────────────────────────────── */}
-              <div className="overflow-hidden relative" style={{ height: 200 }}>
+              <div className="overflow-hidden relative" style={{ height: 260 }}>
                 <img
                   src={cat.image}
                   alt={cat.name}

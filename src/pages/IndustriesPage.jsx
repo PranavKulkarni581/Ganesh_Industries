@@ -12,57 +12,57 @@ import industries from '../data/industriesData';
 /* ── Icon map — match industry name to lucide icon ────────────────── */
 const ICON_MAP = {
   'Agrochemical Industry': FlaskConical,
-  'Chemical Industry':     Factory,
-  'Food Industry':         Wheat,
-  'Dairy Industry':        Milk,
-  'Oil & Lubricants':      Droplets,
-  'Water Industry':        Waves,
-  'Household Industry':    ShoppingBag,
-  'Animal Healthcare':     PawPrint,
-  'Pharmaceutical':        HeartPulse,
-  'General Market':        Package,
+  'Chemical Industry': Factory,
+  'Food Industry': Wheat,
+  'Dairy Industry': Milk,
+  'Oil & Lubricants': Droplets,
+  'Water Industry': Waves,
+  'Household Industry': ShoppingBag,
+  'Animal Healthcare': PawPrint,
+  'Pharmaceutical': HeartPulse,
+  'General Market': Package,
 };
 
 /* ── Image map — match industry name to photo ─────────────────────── */
 const IMAGE_MAP = {
   'Agrochemical Industry': 'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=700&h=420&fit=crop&q=80',
-  'Chemical Industry':     'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=700&h=420&fit=crop&q=80',
-  'Food Industry':         'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=700&h=420&fit=crop&q=80',
-  'Dairy Industry':        'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=700&h=420&fit=crop&q=80',
-  'Oil & Lubricants':      'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=700&h=420&fit=crop&q=80',
-  'Water Industry':        'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=700&h=420&fit=crop&q=80',
-  'Household Industry':    'https://images.unsplash.com/photo-1585421514738-01798e348b17?w=700&h=420&fit=crop&q=80',
-  'Animal Healthcare':     'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=700&h=420&fit=crop&q=80',
-  'Pharmaceutical':        'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=700&h=420&fit=crop&q=80',
-  'General Market':        'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=700&h=420&fit=crop&q=80',
+  'Chemical Industry': 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=700&h=420&fit=crop&q=80',
+  'Food Industry': 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=700&h=420&fit=crop&q=80',
+  'Dairy Industry': 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=700&h=420&fit=crop&q=80',
+  'Oil & Lubricants': 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=700&h=420&fit=crop&q=80',
+  'Water Industry': 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=700&h=420&fit=crop&q=80',
+  'Household Industry': 'https://images.unsplash.com/photo-1585421514738-01798e348b17?w=700&h=420&fit=crop&q=80',
+  'Animal Healthcare': 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=700&h=420&fit=crop&q=80',
+  'Pharmaceutical': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=700&h=420&fit=crop&q=80',
+  'General Market': 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=700&h=420&fit=crop&q=80',
 };
 
 /* ── Description map ──────────────────────────────────────────────── */
 const DESC_MAP = {
   'Agrochemical Industry': 'UN-approved HDPE/F-style bottles for pesticides, herbicides, fungicides, and growth regulators. Chemical-resistant, tamper-evident.',
-  'Chemical Industry':     'Industrial HDPE and PP containers for acids, solvents, lubricants, and specialty chemicals. UN/DOT-certified options available.',
-  'Food Industry':         'BIS-certified food-grade containers for edible oils, sauces, syrups, and processed foods. Safe, sealable, and shelf-ready.',
-  'Dairy Industry':        'FDA-compliant food-grade HDPE milk cans for co-operatives and private dairies. Airtight lids, ergonomic handles, easy-pour design.',
-  'Oil & Lubricants':      'HDPE containers for engine oils, coolants, gear oils, and lubricants. Oil-compatible and spill-proof.',
-  'Water Industry':        'BPA-free PET and HDPE water jars for packaged drinking water, dispensers, and home storage. UV-resistant options.',
-  'Household Industry':    'PET and HDPE bottles for liquid detergents, fabric softeners, floor cleaners, and household disinfectants.',
-  'Animal Healthcare':     'HDPE and PP containers for veterinary medicines, animal feed supplements, and livestock care products.',
-  'Pharmaceutical':        'GMP-compliant HDPE and PP containers for pharmaceutical powders, syrups, and caps. Precision dispensing closures.',
-  'General Market':        'Versatile HDPE containers for general retail and market distribution. Standard shapes for easy branding and labelling.',
+  'Chemical Industry': 'Industrial HDPE and PP containers for acids, solvents, lubricants, and specialty chemicals. UN/DOT-certified options available.',
+  'Food Industry': 'BIS-certified food-grade containers for edible oils, sauces, syrups, and processed foods. Safe, sealable, and shelf-ready.',
+  'Dairy Industry': 'FDA-compliant food-grade HDPE milk cans for co-operatives and private dairies. Airtight lids, ergonomic handles, easy-pour design.',
+  'Oil & Lubricants': 'HDPE containers for engine oils, coolants, gear oils, and lubricants. Oil-compatible and spill-proof.',
+  'Water Industry': 'BPA-free PET and HDPE water jars for packaged drinking water, dispensers, and home storage. UV-resistant options.',
+  'Household Industry': 'PET and HDPE bottles for liquid detergents, fabric softeners, floor cleaners, and household disinfectants.',
+  'Animal Healthcare': 'HDPE and PP containers for veterinary medicines, animal feed supplements, and livestock care products.',
+  'Pharmaceutical': 'GMP-compliant HDPE and PP containers for pharmaceutical powders, syrups, and caps. Precision dispensing closures.',
+  'General Market': 'Versatile HDPE containers for general retail and market distribution. Standard shapes for easy branding and labelling.',
 };
 
 /* ── Products list map ─────────────────────────────────────────────── */
 const PRODUCTS_MAP = {
   'Agrochemical Industry': ['Emida Bottles', 'Handle Bottles', 'Barni Containers', 'Mauzer Cans'],
-  'Chemical Industry':     ['Round Carboys 5L–20L', 'Wide Mouth Jars', 'Industrial Drums 50L+'],
-  'Food Industry':         ['Edible Oil Bottles', 'Ketchup Squeeze Bottles', 'Food Syrup Jars'],
-  'Dairy Industry':        ['Milk Cans 5L–20L', 'Ghagar Containers', 'Curd Packaging Jars'],
-  'Oil & Lubricants':      ['Engine Oil Bottles 1L–4L', 'Coolant Bottles', 'Jerry Cans 5L–10L'],
-  'Water Industry':        ['PET Water Jars 1L–2L', 'HDPE Water Jars 20L–25L', 'Storage Tanks 50L'],
-  'Household Industry':    ['Detergent Bottles', 'Trigger Spray Bottles', 'Floor Cleaner Bottles'],
-  'Animal Healthcare':     ['Veterinary Bottles', 'Feed Supplement Jars', 'Cattle Drench Bottles'],
-  'Pharmaceutical':        ['Powder Jars', 'Spice Containers', 'PP/HDPE Caps & Closures'],
-  'General Market':        ['Round Cans', 'Multipurpose Jars', 'Carry Handle Containers'],
+  'Chemical Industry': ['Round Carboys 5L–20L', 'Wide Mouth Jars', 'Industrial Drums 50L+'],
+  'Food Industry': ['Edible Oil Bottles', 'Ketchup Squeeze Bottles', 'Food Syrup Jars'],
+  'Dairy Industry': ['Milk Cans 5L–20L', 'Ghagar Containers', 'Curd Packaging Jars'],
+  'Oil & Lubricants': ['Engine Oil Bottles 1L–4L', 'Coolant Bottles', 'Jerry Cans 5L–10L'],
+  'Water Industry': ['PET Water Jars 1L–2L', 'HDPE Water Jars 20L–25L', 'Storage Tanks 50L'],
+  'Household Industry': ['Detergent Bottles', 'Trigger Spray Bottles', 'Floor Cleaner Bottles'],
+  'Animal Healthcare': ['Veterinary Bottles', 'Feed Supplement Jars', 'Cattle Drench Bottles'],
+  'Pharmaceutical': ['Powder Jars', 'Spice Containers', 'PP/HDPE Caps & Closures'],
+  'General Market': ['Round Cans', 'Multipurpose Jars', 'Carry Handle Containers'],
 };
 
 /* ═══════════════════════════════════════════════════════════════════ */
@@ -72,11 +72,11 @@ export default function IndustriesPage() {
 
   /* Build enriched list from industriesData + maps */
   const INDUSTRIES = industries.map((ind) => ({
-    icon:           ICON_MAP[ind.name]    || Package,
-    name:           ind.name,
-    desc:           DESC_MAP[ind.name]    || '',
-    products:       PRODUCTS_MAP[ind.name] || [],
-    img:            IMAGE_MAP[ind.name]   || 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&h=420&fit=crop&q=80',
+    icon: ICON_MAP[ind.name] || Package,
+    name: ind.name,
+    desc: DESC_MAP[ind.name] || '',
+    products: PRODUCTS_MAP[ind.name] || [],
+    img: IMAGE_MAP[ind.name] || 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&h=420&fit=crop&q=80',
     primaryCategory: ind.categories[0],   // first category for navigation
   }));
 
@@ -107,7 +107,7 @@ export default function IndustriesPage() {
       <div className="flex flex-col gap-10">
         {INDUSTRIES.map((industry, i) => {
           const isEven = i % 2 === 0;
-          const Icon   = industry.icon;
+          const Icon = industry.icon;
           return (
             <IndustrySection key={industry.name} industry={industry} isEven={isEven} Icon={Icon} index={i} />
           );

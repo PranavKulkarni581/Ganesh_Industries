@@ -251,7 +251,7 @@ export default function CategoryPage() {
                   className="flex flex-col overflow-hidden h-full"
                 >
                   {/* Product image */}
-                  <div className="overflow-hidden" style={{ height: 180 }}>
+                  <div className="overflow-hidden" style={{ height: 240 }}>
                     <img
                       src={product.image}
                       alt={product.name}

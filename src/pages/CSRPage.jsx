@@ -5,7 +5,7 @@ import useScrollReveal from '../hooks/useScrollReveal';
 
 /* ── Images ─────────────────────────────────────────────────────── */
 const IMG = {
-  cows:  'https://images.unsplash.com/photo-1527153818091-1a9638521e2a?w=800&h=550&fit=crop&q=85',
+  cows:  'https://media.telanganatoday.com/wp-content/uploads/2025/07/Goshala.jpg',
   team:  'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=550&fit=crop&q=85',
   green: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&h=500&fit=crop&q=85',
 };
