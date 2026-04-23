@@ -5,11 +5,11 @@ import useScrollReveal from '../hooks/useScrollReveal';
 
 /* ── Images ─────────────────────────────────────────────────────── */
 const IMG = {
-  cows:  'https://media.telanganatoday.com/wp-content/uploads/2025/07/Goshala.jpg',
+  cows:  'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776953534/7c9c7b31-4e9f-4af7-b5a7-491b09c860ae.png',
   team:  'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=550&fit=crop&q=85',
   green: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&h=500&fit=crop&q=85',
 };
-
+ 
 /* ── Pillars ─────────────────────────────────────────────────────── */
 const PILLARS = [
   {

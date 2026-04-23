@@ -40,40 +40,59 @@ const CONTACT_ITEMS = [
 
 /* ═══════════════════════════════════════════════════════════════════ */
 export default function ContactPage() {
-  const [form, setForm]         = useState({ name: '', phone: '', message: '' });
-  const [errors, setErrors]     = useState({});
+  const [form, setForm]           = useState({ name: '', phone: '', message: '' });
+  const [errors, setErrors]       = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending]     = useState(false);
 
   const refHeader = useScrollReveal();
-  const refMain = useScrollReveal();
-  const refCTA = useScrollReveal();
+  const refMain   = useScrollReveal();
+  const refCTA    = useScrollReveal();
 
   /* ── Field change ──────────────────────────────────────────────── */
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((f) => ({ ...f, [name]: value }));
-    if (errors[name]) setErrors((e) => ({ ...e, [name]: '' }));
+    if (errors[name]) setErrors((prev) => ({ ...prev, [name]: '' }));
   };
 
   /* ── Validation ────────────────────────────────────────────────── */
   const validate = () => {
     const errs = {};
-    if (!form.name.trim())        errs.name    = 'Name is required';
-    if (!form.phone.trim())       errs.phone   = 'Phone number is required';
+    if (!form.name.trim())    errs.name    = 'Name is required';
+    if (!form.phone.trim())   errs.phone   = 'Phone number is required';
     else if (!/^\d{10}$/.test(form.phone.replace(/\s/g, '')))
-                                  errs.phone   = 'Enter a valid 10-digit number';
-    if (!form.message.trim())     errs.message = 'Please enter a message';
+                              errs.phone   = 'Enter a valid 10-digit number';
+    if (!form.message.trim()) errs.message = 'Please enter a message';
     return errs;
   };
 
-  /* ── Submit ─────────────────────────────────────────────────────── */
-  const handleSubmit = (e) => {
+  /* ── Submit → Formspree ─────────────────────────────────────────── */
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
-    // TODO: wire up backend / email service here
-    console.log('Contact form:', form);
-    setSubmitted(true);
+
+    setSending(true);
+    try {
+      const res = await fetch('https://formspree.io/f/mlgaojdj', {
+        method:  'POST',
+        headers: { 'Accept': 'application/json' },
+        body:    new FormData(e.target),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        const data = await res.json();
+        console.error('Formspree error:', data);
+        setErrors({ message: 'Submission failed. Please try again.' });
+      }
+    } catch (err) {
+      console.error('Network error:', err);
+      setErrors({ message: 'Network error. Please try again.' });
+    } finally {
+      setSending(false);
+    }
   };
 
   /* ── Reset ──────────────────────────────────────────────────────── */
@@ -135,7 +154,13 @@ export default function ContactPage() {
             </div>
           ) : (
             /* Form */
-            <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-5">
+            <form
+              onSubmit={handleSubmit}
+              action="https://formspree.io/f/mlgaojdj"
+              method="POST"
+              noValidate
+              className="flex flex-col gap-5"
+            >
               <h2 className="font-bold text-sm uppercase tracking-wider mb-1"
                 style={{ color: 'var(--color-text-primary)' }}>
                 Send us a Message
@@ -177,8 +202,8 @@ export default function ContactPage() {
 
               {/* Action buttons */}
               <div className="flex flex-col xl:flex-row gap-3 pt-1 mobile-full">
-                <Button type="submit" variant="primary" size="md" fullWidth>
-                  <Send size={15} /> Send Message
+                <Button type="submit" variant="primary" size="md" fullWidth disabled={sending}>
+                  <Send size={15} /> {sending ? 'Sending…' : 'Send Message'}
                 </Button>
                 <Button
                   as="a"

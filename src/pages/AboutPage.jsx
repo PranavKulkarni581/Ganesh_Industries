@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import {
   ArrowRight, Target, Eye, CheckCircle2,
-  Award, Users, Zap, TrendingUp,
+  Award, Users, Zap, TrendingUp, Quote,
 } from 'lucide-react';
 import { Card, Button, Badge, IconContainer } from '../components/ui';
 import useScrollReveal from '../hooks/useScrollReveal';
@@ -12,6 +12,22 @@ const IMG = {
   team:    'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&h=500&fit=crop&q=85',
 };
 
+/* ── Founders ────────────────────────────────────────────────────── */
+const FOUNDERS = [
+  {
+    name:   'Founder Name 1',
+    role:   'Co-Founder & Managing Director',
+    bio:    'With over three decades of expertise in plastics manufacturing and industrial operations, he laid the foundation of Ganesh Plasto Pack in 1993. His vision for precision engineering and quality-first culture has driven the company from a single-unit facility to a 32-machine powerhouse.',
+    image:  'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&q=85',
+  },
+  {
+    name:   'Founder Name 2',
+    role:   'Co-Founder & Director – Operations',
+    bio:    'A seasoned entrepreneur with deep roots in the Maharashtra industrial belt, he has been instrumental in scaling distribution networks and forging long-term client relationships across agro-chemical, FMCG, and pharma sectors over 30+ years.',
+    image:  'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&q=85',
+  },
+];
+
 /* ── Timeline data ───────────────────────────────────────────────── */
 const TIMELINE = [
   { year: '1993', title: 'Founded', desc: 'Ganesh Plasto Pack established in Barshi, Maharashtra with a small blow-moulding unit.' },
@@ -19,7 +35,7 @@ const TIMELINE = [
   { year: '2008', title: 'ISO Certification', desc: 'Achieved ISO quality management certification. Began supplying to multi-state clients.' },
   { year: '2015', title: 'Fleet & Logistics', desc: 'Added own fleet of delivery trucks for direct pan-India distribution.' },
   { year: '2020', title: '32 Machines', desc: 'Scaled to 32 fully automated blow-moulding machines, producing 85,000+ units per day.' },
-  { year: '2024', title: 'Today', desc: 'Serving 200+ product SKUs across 6 categories with a trusted workforce of 10+ year veterans.' },
+  { year: '2026', title: 'Today', desc: 'Serving 200+ product SKUs across 6 categories with a trusted workforce of 10+ year veterans.' },
 ];
 
 /* ── Values ──────────────────────────────────────────────────────── */
@@ -32,11 +48,12 @@ const VALUES = [
 
 /* ═══════════════════════════════════════════════════════════════════ */
 export default function AboutPage() {
-  const refHero = useScrollReveal();
-  const refStats = useScrollReveal();
-  const refMission = useScrollReveal();
+  const refHero     = useScrollReveal();
+  const refStats    = useScrollReveal();
+  const refMission  = useScrollReveal();
   const refTimeline = useScrollReveal();
-  const refTeam = useScrollReveal();
+  const refFounders = useScrollReveal();
+  const refTeam     = useScrollReveal();
 
   return (
     <div className="flex flex-col gap-20">
@@ -181,7 +198,127 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── §5 Team image ────────────────────────────────────────── */}
+      {/* ── §5 Founders ──────────────────────────────────────────── */}
+      <section ref={refFounders}>
+        <div className="text-center mb-12 reveal">
+          <Badge variant="recessed">Leadership</Badge>
+          <h2
+            className="text-3xl font-extrabold mt-3 tracking-tight"
+            style={{ color: 'var(--color-text-primary)', fontFamily: "'Poppins', sans-serif" }}
+          >
+            Meet the{' '}
+            <span style={{ color: '#0B5ED7' }}>Founders</span>
+          </h2>
+          <p
+            className="text-sm mt-3 max-w-xl mx-auto leading-relaxed"
+            style={{ color: 'var(--color-text-secondary)' }}
+          >
+            The visionaries who built Ganesh Plasto Pack from the ground up —
+            driven by craftsmanship, community, and an unrelenting pursuit of quality.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {FOUNDERS.map((founder, i) => (
+            <div
+              key={founder.name}
+              className={`reveal reveal-delay-${i + 1}`}
+              style={{
+                borderRadius: 20,
+                overflow: 'hidden',
+                background: '#ffffff',
+                border: '1px solid #E2E8F0',
+                boxShadow: '0 12px 40px rgba(11,94,215,0.08)',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.transform = 'translateY(-6px)';
+                e.currentTarget.style.boxShadow = '0 20px 50px rgba(11,94,215,0.14)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 12px 40px rgba(11,94,215,0.08)';
+              }}
+            >
+              {/* ── Avatar (no banner, just padded top) ── */}
+              <div style={{ display: 'flex', justifyContent: 'center', paddingTop: 32 }}>
+                <div style={{
+                  width: 110, height: 110,
+                  borderRadius: '50%',
+                  border: '4px solid #ffffff',
+                  outline: '2px solid rgba(11,94,215,0.15)',
+                  boxShadow: '0 8px 24px rgba(11,94,215,0.2)',
+                  overflow: 'hidden',
+                  background: '#EFF6FF',
+                }}>
+                  <img
+                    src={founder.image}
+                    alt={founder.name}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                </div>
+              </div>
+
+              {/* ── Content ── */}
+              <div style={{ padding: '16px 28px 28px', textAlign: 'center' }}>
+                <h3
+                  style={{
+                    fontSize: 20,
+                    fontWeight: 800,
+                    color: 'var(--color-text-primary)',
+                    margin: '8px 0 4px',
+                    fontFamily: "'Poppins', sans-serif",
+                    letterSpacing: '-0.02em',
+                  }}
+                >
+                  {founder.name}
+                </h3>
+
+                {/* Role pill */}
+                <span
+                  style={{
+                    display: 'inline-block',
+                    fontSize: 11,
+                    fontWeight: 700,
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.08em',
+                    padding: '4px 14px',
+                    borderRadius: 999,
+                    marginBottom: 16,
+                    background: 'linear-gradient(135deg, rgba(11,94,215,0.1), rgba(20,184,166,0.1))',
+                    color: '#0B5ED7',
+                    border: '1px solid rgba(11,94,215,0.15)',
+                  }}
+                >
+                  {founder.role}
+                </span>
+
+                {/* Divider */}
+                <div style={{
+                  width: 40, height: 2, margin: '0 auto 16px',
+                  background: 'linear-gradient(90deg, #0B5ED7, #14B8A6)',
+                  borderRadius: 2,
+                }} />
+
+                {/* Bio */}
+                <p
+                  style={{
+                    fontSize: 13,
+                    lineHeight: 1.75,
+                    color: 'var(--color-text-secondary)',
+                  }}
+                >
+                  {founder.bio}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+
+
+      {/* ── §6 Team image ────────────────────────────────────────── */}
       <section ref={refTeam} className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <Card screws vents padding="none" hoverable={false} className="overflow-hidden order-2 lg:order-1 reveal">
           <img

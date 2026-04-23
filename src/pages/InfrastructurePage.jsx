@@ -6,10 +6,10 @@ import {
 import { Card, Button, Badge, IconContainer } from '../components/ui';
 import useScrollReveal from '../hooks/useScrollReveal';
 
-/* ── Images ─────────────────────────────────────────────────────── */
+/* ── Images ──────────────────────────────────────────────────── */
 const IMG = {
   machines: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&h=550&fit=crop&q=85',
-  trucks:   'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&h=550&fit=crop&q=85',
+  trucks:   'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776882251/d31380b2-d75e-40d1-8789-c70b2dc6fc98.png',
   warehouse:'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=400&fit=crop&q=85',
 };
 

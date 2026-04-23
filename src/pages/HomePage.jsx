@@ -257,7 +257,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           §3  PRODUCT CATEGORY PREVIEW
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section ref={refProducts}>
+      {/* <section ref={refProducts}>
         <div className="w-full">
         <SectionHeader
           badge="Our Products"
@@ -273,17 +273,17 @@ export default function HomePage() {
               className="group block"
             >
               <Card screws={false} padding="none" className="overflow-hidden flex flex-col">
-                {/* Image */}
+               
                 <div className="overflow-hidden" style={{ height: 160 }}>
                   <img
                     src={img}
                     alt={name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    /* TODO: replace with actual product category images */
+                  
                   />
                 </div>
 
-                {/* Label */}
+             
                 <div
                   className="px-4 py-3 flex items-center justify-between"
                   style={{ borderTop: '1px solid rgba(181,201,219,0.4)' }}
@@ -305,14 +305,13 @@ export default function HomePage() {
           ))}
         </div>
 
-        {/* View all CTA */}
         <div className="flex justify-center">
           <Button as={Link} to="/products" variant="secondary" size="lg">
             View All Products <ArrowRight size={16} />
           </Button>
         </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           §4  INFRASTRUCTURE HIGHLIGHT

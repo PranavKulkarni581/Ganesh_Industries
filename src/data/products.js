@@ -269,7 +269,7 @@ export const CATEGORIES = [
         id: 'adani-shape',
         name: 'Adani Shape Container',
         sizes: [], // ⚠️ Add sizes
-        image: PH.oil,
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839214/adani_ivory_fd3nkf.jpg',
         description: 'Premium edible oil container with strong build and market-standard design.',
         applications: ['Edible Oil', 'Cooking Oil'],
         material: 'HDPE',
@@ -281,7 +281,7 @@ export const CATEGORIES = [
         id: 'gemini',
         name: 'Gemini Container',
         sizes: [], // ⚠️ Add sizes
-        image: PH.oil,
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839217/gemini_yellow_mxftpj.jpg',
         description: 'Popular edible oil packaging container suitable for retail and bulk use.',
         applications: ['Cooking Oil', 'Refined Oil'],
         material: 'HDPE',
@@ -293,7 +293,7 @@ export const CATEGORIES = [
         id: 'malharpet',
         name: 'Malharpet Container',
         sizes: [], // ⚠️ Add sizes
-        image: PH.oil,
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839214/malharpet_pista_fy8akb.jpg',
         description: 'High-quality oil container used for commercial edible oil storage.',
         applications: ['Bulk Oil Storage', 'Retail Packaging'],
         material: 'HDPE',
@@ -305,7 +305,7 @@ export const CATEGORIES = [
         id: 'samarth',
         name: 'Samarth Container',
         sizes: [], // ⚠️ Add sizes
-        image: PH.oil,
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839214/samarth_yellow_ez9hhe.jpg',
         description: 'Robust container designed for edible oil packaging with easy handling.',
         applications: ['Cooking Oil', 'Edible Oil'],
         material: 'HDPE',
@@ -317,7 +317,7 @@ export const CATEGORIES = [
         id: 'oval-oil',
         name: 'Oval Oil Container',
         sizes: [], // ⚠️ Add sizes
-        image: PH.oil,
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839215/samarth_green_d2nkhq.jpg',
         description: 'Ergonomic oval-shaped container for efficient storage and pouring of edible oil.',
         applications: ['Edible Oil', 'Liquid Storage'],
         material: 'HDPE',
@@ -329,7 +329,7 @@ export const CATEGORIES = [
         id: 'oil-can-15kg',
         name: '15kg Oil Can',
         sizes: ['15kg'],
-        image: PH.bulk,
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839217/15_kg_yellow_vptoza.jpg',
         description: 'Heavy-duty oil can for bulk edible oil storage and transport.',
         applications: ['Bulk Oil Storage', 'Industrial Supply'],
         material: 'HDPE',
