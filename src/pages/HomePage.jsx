@@ -18,7 +18,7 @@ const IMG = {
   chemical:  'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=500&h=380&fit=crop&q=80',
   milk:      'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=500&h=380&fit=crop&q=80',
   water:     'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=500&h=380&fit=crop&q=80',
-  csr:       'https://images.unsplash.com/photo-1593113616828-6f22bca04804?w=800&h=500&fit=crop&q=80',
+  csr:       'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776953534/7c9c7b31-4e9f-4af7-b5a7-491b09c860ae.png',
 };
 
 /* ─── Data ─────────────────────────────────────────────────────────── */

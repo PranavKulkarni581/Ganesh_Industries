@@ -8,10 +8,10 @@ import useScrollReveal from '../hooks/useScrollReveal';
 
 /* ── Images ─────────────────────────────────────────────────────── */
 const IMG = {
-  hero:    'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&h=600&fit=crop&q=85',
-  team:    'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&h=500&fit=crop&q=85',
+  hero:    'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777108567/44233288-9df1-4818-ba09-cc53ed93240d.png',
+  team:    'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&h=500&fit=crop&q=85', 
 };
-
+  
 /* ── Founders ────────────────────────────────────────────────────── */
 const FOUNDERS = [
   {

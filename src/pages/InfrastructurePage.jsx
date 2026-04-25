@@ -4,13 +4,14 @@ import {
   Warehouse, Gauge, CheckCircle2, ArrowRight,
 } from 'lucide-react';
 import { Card, Button, Badge, IconContainer } from '../components/ui';
+import SisterFirms from '../components/ui/SisterFirms';
 import useScrollReveal from '../hooks/useScrollReveal';
 
 /* ── Images ──────────────────────────────────────────────────── */
 const IMG = {
-  machines: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&h=550&fit=crop&q=85',
+  machines: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777108681/764cc1b1-3e03-4483-a626-89efe38bdea5.png',
   trucks:   'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776882251/d31380b2-d75e-40d1-8789-c70b2dc6fc98.png',
-  warehouse:'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=400&fit=crop&q=85',
+  warehouse:'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777108888/c0d9e0df-2a75-4353-b920-98e14268e3cc.png',
 };
 
 /* ── Infra highlights ────────────────────────────────────────────── */
@@ -106,7 +107,7 @@ export default function InfrastructurePage() {
       </section>
 
       {/* ── §4 QC Lab & Certifications ──────────────────────────── */}
-      <section ref={refQC}>
+      {/* <section ref={refQC}>
         <div className="text-center mb-8 reveal">
           <Badge variant="recessed">Quality Control</Badge>
           <h2 className="text-3xl font-extrabold mt-3 tracking-tight"
@@ -127,7 +128,7 @@ export default function InfrastructurePage() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ── §5 Trucks & Logistics ───────────────────────────────── */}
       <section ref={refLogistics} className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -189,6 +190,9 @@ export default function InfrastructurePage() {
           </div>
         </Card>
       </section>
+
+      {/* ── §7 Sister Firms ───────────────────────────────────── */}
+      <SisterFirms />
 
     </div>
   );
