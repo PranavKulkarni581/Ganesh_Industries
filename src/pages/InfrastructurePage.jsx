@@ -9,7 +9,7 @@ import useScrollReveal from '../hooks/useScrollReveal';
 
 /* ── Images ──────────────────────────────────────────────────── */
 const IMG = {
-  machines: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777108681/764cc1b1-3e03-4483-a626-89efe38bdea5.png',
+  machines: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777300533/photo-collage.png_xbpy7q.png',
   trucks:   'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776882251/d31380b2-d75e-40d1-8789-c70b2dc6fc98.png',
   warehouse:'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777108888/c0d9e0df-2a75-4353-b920-98e14268e3cc.png',
 };
