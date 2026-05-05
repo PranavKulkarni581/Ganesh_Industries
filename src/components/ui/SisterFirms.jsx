@@ -10,13 +10,14 @@ import useScrollReveal from '../../hooks/useScrollReveal';
 
 /* ── Sister Firms Data ─────────────────────────────────────── */
 const SISTER_FIRMS = [
-  { name: 'RK Club and Resort' },
-  { name: 'Ganesh Plastopack' },
-  { name: 'Yashraj Ferms' },
-  { name: 'Ganesh Agro Industries' },
-  { name: 'Ganesh Chemical Solutions' },
-  { name: 'Ganesh Logistics' },
-  { name: 'Ganesh Exports' },
+  { name: 'Gautam Rajkumar Kankariya' },
+  { name: 'Ganesh Plasto Pack' },
+  { name: 'Yashraj Industries' },
+  { name: 'Reliable Industries' },
+  { name: 'Aditya Roadlines' },
+  { name: 'Sunplast Industries' },
+  { name: 'R.K. Club & Resort' }, 
+  { name: 'Adiraj Industries' }, 
 ];
 
 /* ── Inline styles (no extra CSS file needed) ──────────────── */

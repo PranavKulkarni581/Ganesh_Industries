@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import {
   ArrowRight, Target, Eye, CheckCircle2,
   Award, Users, Zap, TrendingUp, Quote,
+  Crown, Sparkles, GraduationCap, Briefcase,
 } from 'lucide-react';
 import { Card, Button, Badge, IconContainer } from '../components/ui';
 import useScrollReveal from '../hooks/useScrollReveal';
@@ -13,18 +14,45 @@ const IMG = {
 };
   
 /* ── Founders ────────────────────────────────────────────────────── */
-const FOUNDERS = [
+const FIRST_GEN = [
   {
-    name:   'Founder Name 1',
-    role:   'Co-Founder & Managing Director',
-    bio:    'With over three decades of expertise in plastics manufacturing and industrial operations, he laid the foundation of Ganesh Plasto Pack in 1993. His vision for precision engineering and quality-first culture has driven the company from a single-unit facility to a 32-machine powerhouse.',
-    image:  'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&q=85',
+    name:   'Rajkumar Kankariya',
+    role:   'Founder & Managing Director',
+    bio:    'The visionary who founded Ganesh Plasto Pack in 1993, Rajkumar Ji laid the cornerstone of the company with a relentless focus on quality, ethics, and trust. His pioneering spirit transformed a single-unit facility into a 32-machine industrial powerhouse.',
+    initials: 'RK',
   },
   {
-    name:   'Founder Name 2',
+    name:   'Gautam Kankariya',
+    role:   'Co-Founder & Director',
+    qualification: 'BCom',
+    bio:    'With deep expertise in business operations and financial management, Gautam Ji has been instrumental in building robust distribution networks and forging long-term client relationships across agro-chemical, FMCG, and pharma sectors.',
+    initials: 'GK',
+  },
+  {
+    name:   'Kishor Kankariya',
     role:   'Co-Founder & Director – Operations',
-    bio:    'A seasoned entrepreneur with deep roots in the Maharashtra industrial belt, he has been instrumental in scaling distribution networks and forging long-term client relationships across agro-chemical, FMCG, and pharma sectors over 30+ years.',
-    image:  'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&q=85',
+    qualification: 'BCom',
+    bio:    'A seasoned entrepreneur with deep roots in the Maharashtra industrial belt, Kishor Ji has driven operational excellence and scaled the company\'s production capabilities to serve 200+ product SKUs across 6 categories.',
+    initials: 'KK',
+  },
+];
+
+const NEXT_GEN = [
+  {
+    name:   'Yash Kankariya',
+    role:   'Director – Finance & Strategy',
+    qualification: 'BBA (Finance & Management)',
+    institution: 'MIT, Pune',
+    bio:    'Armed with a degree in Finance & Management from MIT Pune, Yash brings modern financial strategies, data-driven decision making, and fresh business perspectives to steer the company\'s growth into new markets.',
+    initials: 'YK',
+  },
+  {
+    name:   'Aditya Kankariya',
+    role:   'Director – Production & Innovation',
+    qualification: 'BE Production Engineering',
+    institution: 'Jain University, Bangalore',
+    bio:    'With a BE in Production Engineering from Jain University Bangalore, Aditya drives manufacturing innovation, process optimization, and technology upgrades to keep Ganesh Plasto Pack at the industry\'s cutting edge.',
+    initials: 'AK',
   },
 ];
 
@@ -200,119 +228,376 @@ export default function AboutPage() {
 
       {/* ── §5 Founders ──────────────────────────────────────────── */}
       <section ref={refFounders}>
-        <div className="text-center mb-12 reveal">
+        <div className="text-center mb-14 reveal">
           <Badge variant="recessed">Leadership</Badge>
           <h2
             className="text-3xl font-extrabold mt-3 tracking-tight"
             style={{ color: 'var(--color-text-primary)', fontFamily: "'Poppins', sans-serif" }}
           >
-            Meet the{' '}
-            <span style={{ color: '#0B5ED7' }}>Founders</span>
+            The People Behind{' '}
+            <span style={{ color: '#0B5ED7' }}>Ganesh Plasto Pack</span>
           </h2>
           <p
-            className="text-sm mt-3 max-w-xl mx-auto leading-relaxed"
+            className="text-sm mt-3 max-w-2xl mx-auto leading-relaxed"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            The visionaries who built Ganesh Plasto Pack from the ground up —
-            driven by craftsmanship, community, and an unrelenting pursuit of quality.
+            Built on the pillars of ethics, trust, and relentless quality — our legacy
+            spans two generations of the Kankariya family, each contributing vision and
+            expertise to grow the company steadily.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {FOUNDERS.map((founder, i) => (
-            <div
-              key={founder.name}
-              className={`reveal reveal-delay-${i + 1}`}
-              style={{
-                borderRadius: 20,
-                overflow: 'hidden',
-                background: '#ffffff',
-                border: '1px solid #E2E8F0',
-                boxShadow: '0 12px 40px rgba(11,94,215,0.08)',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.transform = 'translateY(-6px)';
-                e.currentTarget.style.boxShadow = '0 20px 50px rgba(11,94,215,0.14)';
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 12px 40px rgba(11,94,215,0.08)';
-              }}
-            >
-              {/* ── Avatar (no banner, just padded top) ── */}
-              <div style={{ display: 'flex', justifyContent: 'center', paddingTop: 32 }}>
-                <div style={{
-                  width: 110, height: 110,
-                  borderRadius: '50%',
-                  border: '4px solid #ffffff',
-                  outline: '2px solid rgba(11,94,215,0.15)',
-                  boxShadow: '0 8px 24px rgba(11,94,215,0.2)',
-                  overflow: 'hidden',
-                  background: '#EFF6FF',
-                }}>
-                  <img
-                    src={founder.image}
-                    alt={founder.name}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                  />
-                </div>
-              </div>
+        {/* ═══ First Generation ═══ */}
+        <div className="reveal" style={{ marginBottom: 48 }}>
+          {/* Generation Label */}
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 12,
+            marginBottom: 28,
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              width: 44, height: 44, borderRadius: 12,
+              background: 'linear-gradient(135deg, #0B5ED7, #0A2540)',
+              boxShadow: '0 8px 24px rgba(11,94,215,0.3)',
+            }}>
+              <Crown size={20} color="#fff" />
+            </div>
+            <div>
+              <h3 style={{
+                fontSize: 18, fontWeight: 800, color: 'var(--color-text-primary)',
+                fontFamily: "'Poppins', sans-serif", letterSpacing: '-0.01em',
+                lineHeight: 1.3,
+              }}>
+                Founding Generation
+              </h3>
+              <p style={{ fontSize: 12, color: 'var(--color-text-secondary)', fontWeight: 500 }}>
+                Est. 1993 · The Visionaries
+              </p>
+            </div>
+          </div>
 
-              {/* ── Content ── */}
-              <div style={{ padding: '16px 28px 28px', textAlign: 'center' }}>
-                <h3
-                  style={{
-                    fontSize: 20,
-                    fontWeight: 800,
+          {/* Three Founder Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {FIRST_GEN.map((founder, i) => (
+              <div
+                key={founder.name}
+                className={`reveal reveal-delay-${i + 1}`}
+                style={{
+                  borderRadius: 20,
+                  overflow: 'hidden',
+                  background: '#ffffff',
+                  border: '1px solid #E2E8F0',
+                  boxShadow: '0 12px 40px rgba(11,94,215,0.08)',
+                  transition: 'transform 0.35s ease, box-shadow 0.35s ease',
+                  position: 'relative',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.transform = 'translateY(-6px)';
+                  e.currentTarget.style.boxShadow = '0 20px 50px rgba(11,94,215,0.14)';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 12px 40px rgba(11,94,215,0.08)';
+                }}
+              >
+                {/* Top accent bar */}
+                <div style={{
+                  height: 4,
+                  background: 'linear-gradient(90deg, #0B5ED7, #14B8A6)',
+                }} />
+
+                {/* Avatar initials */}
+                <div style={{ display: 'flex', justifyContent: 'center', paddingTop: 28 }}>
+                  <div style={{
+                    width: 88, height: 88,
+                    borderRadius: '50%',
+                    background: 'linear-gradient(135deg, #0B5ED7, #0A2540)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    boxShadow: '0 8px 24px rgba(11,94,215,0.25)',
+                    border: '3px solid #ffffff',
+                    outline: '2px solid rgba(11,94,215,0.12)',
+                  }}>
+                    <span style={{
+                      fontSize: 28, fontWeight: 800, color: '#ffffff',
+                      fontFamily: "'Poppins', sans-serif",
+                      letterSpacing: '0.02em',
+                    }}>
+                      {founder.initials}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div style={{ padding: '16px 24px 28px', textAlign: 'center' }}>
+                  <h3 style={{
+                    fontSize: 18, fontWeight: 800,
                     color: 'var(--color-text-primary)',
-                    margin: '8px 0 4px',
+                    margin: '8px 0 6px',
                     fontFamily: "'Poppins', sans-serif",
                     letterSpacing: '-0.02em',
-                  }}
-                >
-                  {founder.name}
-                </h3>
+                  }}>
+                    {founder.name}
+                  </h3>
 
-                {/* Role pill */}
-                <span
-                  style={{
+                  {/* Role pill */}
+                  <span style={{
                     display: 'inline-block',
-                    fontSize: 11,
-                    fontWeight: 700,
+                    fontSize: 10, fontWeight: 700,
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',
                     padding: '4px 14px',
                     borderRadius: 999,
-                    marginBottom: 16,
+                    marginBottom: 6,
                     background: 'linear-gradient(135deg, rgba(11,94,215,0.1), rgba(20,184,166,0.1))',
                     color: '#0B5ED7',
                     border: '1px solid rgba(11,94,215,0.15)',
-                  }}
-                >
-                  {founder.role}
-                </span>
+                  }}>
+                    {founder.role}
+                  </span>
 
-                {/* Divider */}
+                  {/* Qualification */}
+                  {founder.qualification && (
+                    <div style={{
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      gap: 4, marginBottom: 12, marginTop: 6,
+                    }}>
+                      <GraduationCap size={13} color="#64748B" />
+                      <span style={{ fontSize: 12, color: 'var(--color-text-secondary)', fontWeight: 600 }}>
+                        {founder.qualification}
+                      </span>
+                    </div>
+                  )}
+
+                  {!founder.qualification && <div style={{ marginBottom: 12 }} />}
+
+                  {/* Divider */}
+                  <div style={{
+                    width: 36, height: 2, margin: '0 auto 14px',
+                    background: 'linear-gradient(90deg, #0B5ED7, #14B8A6)',
+                    borderRadius: 2,
+                  }} />
+
+                  {/* Bio */}
+                  <p style={{
+                    fontSize: 13, lineHeight: 1.75,
+                    color: 'var(--color-text-secondary)',
+                  }}>
+                    {founder.bio}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ═══ Generation Connector ═══ */}
+        <div className="reveal" style={{
+          display: 'flex', flexDirection: 'column', alignItems: 'center',
+          margin: '0 0 48px',
+          position: 'relative',
+        }}>
+          <div style={{
+            width: 2, height: 48,
+            background: 'linear-gradient(to bottom, #0B5ED7, #14B8A6)',
+            borderRadius: 2,
+          }} />
+          <div style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            width: 36, height: 36, borderRadius: '50%',
+            background: 'linear-gradient(135deg, #14B8A6, #0B5ED7)',
+            boxShadow: '0 6px 20px rgba(20,184,166,0.35)',
+            margin: '8px 0',
+          }}>
+            <Sparkles size={16} color="#fff" />
+          </div>
+          <div style={{
+            width: 2, height: 48,
+            background: 'linear-gradient(to bottom, #14B8A6, #0B5ED7)',
+            borderRadius: 2,
+          }} />
+        </div>
+
+        {/* ═══ Next Generation ═══ */}
+        <div className="reveal">
+          {/* Generation Label */}
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 12,
+            marginBottom: 28,
+          }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              width: 44, height: 44, borderRadius: 12,
+              background: 'linear-gradient(135deg, #14B8A6, #0B5ED7)',
+              boxShadow: '0 8px 24px rgba(20,184,166,0.3)',
+            }}>
+              <Sparkles size={20} color="#fff" />
+            </div>
+            <div>
+              <h3 style={{
+                fontSize: 18, fontWeight: 800, color: 'var(--color-text-primary)',
+                fontFamily: "'Poppins', sans-serif", letterSpacing: '-0.01em',
+                lineHeight: 1.3,
+              }}>
+                Next Generation
+              </h3>
+              <p style={{ fontSize: 12, color: 'var(--color-text-secondary)', fontWeight: 500 }}>
+                New Ideas · New Vision · Steady Growth
+              </p>
+            </div>
+          </div>
+
+          {/* Two Next-Gen Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {NEXT_GEN.map((member, i) => (
+              <div
+                key={member.name}
+                className={`reveal reveal-delay-${i + 1}`}
+                style={{
+                  borderRadius: 20,
+                  overflow: 'hidden',
+                  background: '#ffffff',
+                  border: '1px solid #E2E8F0',
+                  boxShadow: '0 12px 40px rgba(20,184,166,0.08)',
+                  transition: 'transform 0.35s ease, box-shadow 0.35s ease',
+                  position: 'relative',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.transform = 'translateY(-6px)';
+                  e.currentTarget.style.boxShadow = '0 20px 50px rgba(20,184,166,0.14)';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 12px 40px rgba(20,184,166,0.08)';
+                }}
+              >
+                {/* Top accent bar – teal gradient for next gen */}
                 <div style={{
-                  width: 40, height: 2, margin: '0 auto 16px',
-                  background: 'linear-gradient(90deg, #0B5ED7, #14B8A6)',
-                  borderRadius: 2,
+                  height: 4,
+                  background: 'linear-gradient(90deg, #14B8A6, #0B5ED7)',
                 }} />
 
-                {/* Bio */}
-                <p
-                  style={{
-                    fontSize: 13,
-                    lineHeight: 1.75,
-                    color: 'var(--color-text-secondary)',
-                  }}
-                >
-                  {founder.bio}
-                </p>
+                <div style={{
+                  display: 'flex', alignItems: 'flex-start', gap: 20,
+                  padding: '28px 28px 28px',
+                }}>
+                  {/* Avatar initials */}
+                  <div style={{
+                    width: 80, height: 80,
+                    borderRadius: '50%',
+                    background: 'linear-gradient(135deg, #14B8A6, #0B5ED7)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    boxShadow: '0 8px 24px rgba(20,184,166,0.25)',
+                    flexShrink: 0,
+                    border: '3px solid #ffffff',
+                    outline: '2px solid rgba(20,184,166,0.12)',
+                  }}>
+                    <span style={{
+                      fontSize: 24, fontWeight: 800, color: '#ffffff',
+                      fontFamily: "'Poppins', sans-serif",
+                      letterSpacing: '0.02em',
+                    }}>
+                      {member.initials}
+                    </span>
+                  </div>
+
+                  {/* Content */}
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <h3 style={{
+                      fontSize: 18, fontWeight: 800,
+                      color: 'var(--color-text-primary)',
+                      fontFamily: "'Poppins', sans-serif",
+                      letterSpacing: '-0.02em',
+                      marginBottom: 4,
+                    }}>
+                      {member.name}
+                    </h3>
+
+                    {/* Role pill */}
+                    <span style={{
+                      display: 'inline-block',
+                      fontSize: 10, fontWeight: 700,
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.08em',
+                      padding: '3px 12px',
+                      borderRadius: 999,
+                      marginBottom: 8,
+                      background: 'linear-gradient(135deg, rgba(20,184,166,0.1), rgba(11,94,215,0.1))',
+                      color: '#14B8A6',
+                      border: '1px solid rgba(20,184,166,0.2)',
+                    }}>
+                      {member.role}
+                    </span>
+
+                    {/* Qualification + Institution */}
+                    <div style={{
+                      display: 'flex', flexWrap: 'wrap', gap: 8,
+                      marginBottom: 12, marginTop: 4,
+                    }}>
+                      <div style={{
+                        display: 'flex', alignItems: 'center', gap: 4,
+                        fontSize: 11, color: '#0B5ED7', fontWeight: 600,
+                        background: 'rgba(11,94,215,0.06)',
+                        padding: '3px 10px', borderRadius: 8,
+                      }}>
+                        <GraduationCap size={12} />
+                        {member.qualification}
+                      </div>
+                      <div style={{
+                        display: 'flex', alignItems: 'center', gap: 4,
+                        fontSize: 11, color: 'var(--color-text-secondary)', fontWeight: 600,
+                        background: 'var(--color-surface-2)',
+                        padding: '3px 10px', borderRadius: 8,
+                      }}>
+                        <Briefcase size={11} />
+                        {member.institution}
+                      </div>
+                    </div>
+
+                    {/* Divider */}
+                    <div style={{
+                      width: 36, height: 2, marginBottom: 10,
+                      background: 'linear-gradient(90deg, #14B8A6, #0B5ED7)',
+                      borderRadius: 2,
+                    }} />
+
+                    {/* Bio */}
+                    <p style={{
+                      fontSize: 13, lineHeight: 1.75,
+                      color: 'var(--color-text-secondary)',
+                    }}>
+                      {member.bio}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        {/* ═══ Legacy Quote ═══ */}
+        <div className="reveal" style={{
+          marginTop: 48,
+          textAlign: 'center',
+          padding: '32px 28px',
+          borderRadius: 20,
+          background: 'linear-gradient(135deg, rgba(11,94,215,0.03), rgba(20,184,166,0.03))',
+          border: '1px solid rgba(11,94,215,0.08)',
+        }}>
+          <Quote size={28} color="#0B5ED7" style={{ margin: '0 auto 12px', opacity: 0.3 }} />
+          <p style={{
+            fontSize: 16, fontWeight: 600, fontStyle: 'italic',
+            color: 'var(--color-text-primary)',
+            lineHeight: 1.7, maxWidth: 640, margin: '0 auto',
+            fontFamily: "'Poppins', sans-serif",
+          }}>
+            Growing steadily, following the ethics and trust that this company was built upon.
+          </p>
+          <p style={{
+            fontSize: 12, color: 'var(--color-text-secondary)',
+            marginTop: 8, fontWeight: 500,
+          }}>
+            — The Kankariya Family
+          </p>
         </div>
       </section>
 

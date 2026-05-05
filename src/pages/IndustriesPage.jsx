@@ -21,21 +21,21 @@ const ICON_MAP = {
   'Animal Healthcare': PawPrint,
   'Pharmaceutical': HeartPulse,
   'General Market': Package,
-};
+}; 
 
 /* ── Image map — match industry name to photo ─────────────────────── */
 const IMAGE_MAP = {
-  'Agrochemical Industry': 'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=700&h=420&fit=crop&q=80',
-  'Chemical Industry': 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=700&h=420&fit=crop&q=80',
-  'Food Industry': 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=700&h=420&fit=crop&q=80',
-  'Dairy Industry': 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=700&h=420&fit=crop&q=80',
-  'Oil & Lubricants': 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=700&h=420&fit=crop&q=80',
-  'Water Industry': 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=700&h=420&fit=crop&q=80',
-  'Household Industry': 'https://images.unsplash.com/photo-1585421514738-01798e348b17?w=700&h=420&fit=crop&q=80',
-  'Animal Healthcare': 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=700&h=420&fit=crop&q=80',
-  'Pharmaceutical': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=700&h=420&fit=crop&q=80',
-  'General Market': 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=700&h=420&fit=crop&q=80',
-};
+  'Agrochemical Industry': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777956471/732eeb7d-46ef-4929-959e-86fcf28aebf2.png',
+  'Chemical Industry': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777956534/6b672813-8e53-4f01-83d5-e1368d145612.png',
+  'Food Industry': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777956560/cdf25316-20d3-4740-8263-83cf83357b08.png',
+  'Dairy Industry': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777956583/a42406ed-ee49-4e44-bd80-b156eb3cc718.png',
+  'Oil & Lubricants': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777956606/9f7f29de-cce5-4b68-913e-ad704c5fe3ca.png',
+  'Water Industry': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777956628/29021c6e-531b-4384-8f97-9a4839439f15.png',
+  'Household Industry': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777956653/445a30f1-4424-4c22-81bd-c8e2d96fb05d.png',
+  'Animal Healthcare': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777956675/48a8b479-c959-4b45-918d-5026eca06828.png',
+  'Pharmaceutical': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777957189/8e204199-fda4-4adc-9928-a6771ca8b1dd.png',
+  'General Market': 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777957392/3d53bcf4-9af3-4fb3-a9f1-cecc903ef88d.png',
+}; 
 
 /* ── Description map ──────────────────────────────────────────────── */
 const DESC_MAP = {
