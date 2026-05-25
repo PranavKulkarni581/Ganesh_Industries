@@ -18,19 +18,11 @@ export default function Footer() {
         {/* ── Column 1: Brand ── */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2.5">
-            <div
-              className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
-              style={{
-                background: 'linear-gradient(135deg, #0B5ED7 0%, #14B8A6 100%)',
-                boxShadow: '0 4px 12px rgba(11,94,215,0.4)',
-              }}
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-                stroke="#ffffff" strokeWidth="2.2"
-                strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              </svg>
-            </div>
+            <img
+              src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779697284/3970a97b-bcf8-4a54-b29c-5769f9920714.png"
+              alt="Ganesh Plasto Pack Logo"
+              className="h-9 w-auto shrink-0"
+            />
             <span
               className="font-bold text-[15px] tracking-tight text-white"
               style={{ fontFamily: "'Poppins', sans-serif" }}
