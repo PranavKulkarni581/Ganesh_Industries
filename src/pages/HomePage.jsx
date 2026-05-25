@@ -11,8 +11,8 @@ import useScrollReveal from '../hooks/useScrollReveal';
 
 /* ─── Image URLs (replace with real assets later) ─────────────────── */
 const IMG = {
-  hero:      'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&h=700&fit=crop&q=85',
-  factory:   'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=600&fit=crop&q=85',
+  hero:      'https://res.cloudinary.com/dlh5prjhb/image/upload/v1779696819/ChatGPT_Image_May_25_2026_11_35_57_AM_tmk1wr.png',
+  factory:   'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777108567/44233288-9df1-4818-ba09-cc53ed93240d.png',
   agro:      'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=500&h=380&fit=crop&q=80',
   edibleOil: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&h=380&fit=crop&q=80',
   chemical:  'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=500&h=380&fit=crop&q=80',
