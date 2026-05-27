@@ -97,9 +97,10 @@ export default function IndustriesPage() {
           className="text-base leading-relaxed max-w-2xl"
           style={{ color: 'var(--color-text-secondary)' }}
         >
-          From agrochemicals to healthcare, our versatile range of plastic
+          Ganesh Plasto Pack - Best Jerry Can Manufacturer and HDPE Jerry Can Supplier serving agrochemical, 
+          chemical, food, dairy, pharma, and all industries. Our versatile range of plastic
           containers is engineered to meet the exact storage, safety, and
-          compliance requirements of each industry we serve.
+          compliance requirements of each sector we serve.
         </p>
       </div>
 

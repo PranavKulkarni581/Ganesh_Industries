@@ -95,8 +95,8 @@ export default function AboutPage() {
             style={{ color: 'var(--color-text-primary)', fontFamily: "'Poppins', sans-serif" }}
           >
             30+ Years of{' '}
-            <span style={{ color: '#0B5ED7' }}>Packaging</span>{' '}
-            Excellence
+            <span style={{ color: '#0B5ED7' }}>Jerry Can Manufacturing</span>{' '}
+            Excellence in Barshi
           </h1>
           <p
             className="text-base leading-relaxed max-w-xl"
@@ -104,9 +104,10 @@ export default function AboutPage() {
           >
             Founded in 1993 in Barshi, Maharashtra, Ganesh Plasto Pack has grown
             from a single-unit blow-moulding facility into one of the region's
-            most trusted industrial plastic packaging manufacturers. Three
+            most trusted Jerry Can Manufacturers and HDPE Jerry Can Suppliers. Three
             decades of craftsmanship, 85,000+ units a day, and an unwavering
-            commitment to quality define who we are.
+            commitment to quality define who we are. Best gerry can manufacturer
+            and best HDPE can manufacturer in India, serving across industries.
           </p>
           <div className="flex flex-wrap gap-3">
             <Button as={Link} to="/products" variant="primary" size="md">

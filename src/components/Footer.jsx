@@ -19,9 +19,10 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2.5">
             <img
-              src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779697284/3970a97b-bcf8-4a54-b29c-5769f9920714.png"
-              alt="Ganesh Plasto Pack Logo"
+              src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779891101/8a0b8620-7e17-498d-9c44-1f996c262384.png"
+              alt="Ganesh Plasto Pack Logo - Best Jerry Can Manufacturer"
               className="h-9 w-auto shrink-0"
+              style={{ objectFit: 'contain', backgroundColor: 'transparent', borderRadius: '6px' }}
             />
             <span
               className="font-bold text-[15px] tracking-tight text-white"
@@ -32,7 +33,7 @@ export default function Footer() {
           </div>
 
           <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>
-            {siteConfig.brand.tagline} — engineered for durability, designed to impress.
+            Best Jerry Can Manufacturer and HDPE Jerry Can Supplier in Barshi, India. Ganesh plasto pack provides innovative, durable plastic packaging solutions for every industry. Best gerry can manufacturer with 30+ years expertise.
           </p>
 
           {/* Accent divider */}

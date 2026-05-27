@@ -8,8 +8,8 @@
 export const siteConfig = {
   brand: {
     name: 'Ganesh Plasto Pack',
-    tagline: 'Innovative Packaging Solutions',
-    logo: null, // Replace with '/assets/logo.png' or an SVG import
+    tagline: 'Jerry Can Manufacturer & HDPE Jerry Can Supplier in Barshi, India',
+    logo: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1779891101/8a0b8620-7e17-498d-9c44-1f996c262384.png',
     email: 'gautamkankariya@gmail.com',
     phone: '9561618161',
     address: 'Barshi, Maharashtra',

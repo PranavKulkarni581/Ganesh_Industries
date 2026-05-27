@@ -23,8 +23,7 @@ export default function ProductsPage() {
           className="text-base max-w-2xl leading-relaxed"
           style={{ color: 'var(--color-text-secondary)' }}
         >
-          Browse our complete range of industrial-grade plastic packaging solutions.
-          Click a category to explore individual products and filter by size or type.
+          Browse Ganesh Plasto Pack's complete range of Jerry Cans, HDPE Jerry Can solutions, and industrial-grade plastic packaging. Best jerry can manufacturer in India offering 200+ products designed for durability and performance.
         </p>
       </div>
 

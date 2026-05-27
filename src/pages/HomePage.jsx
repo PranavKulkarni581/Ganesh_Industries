@@ -110,6 +110,24 @@ export default function HomePage() {
 
           {/* Left — copy */}
           <div className="flex flex-col gap-6 reveal">
+            {/* Logo */}
+            <div className="flex items-center gap-3">
+              <img
+                src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779891101/8a0b8620-7e17-498d-9c44-1f996c262384.png"
+                alt="Ganesh Plasto Pack Logo"
+                className="h-16 w-auto"
+                style={{ objectFit: 'contain', backgroundColor: 'transparent', borderRadius: '8px' }}
+              />
+              <div>
+                <h3 style={{ color: '#FFFFFF', fontSize: '14px', fontWeight: '600' }}>
+                  GANESH PLASTO PACK
+                </h3>
+                <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '12px' }}>
+                  Best Jerry Can Manufacturer
+                </p>
+              </div>
+            </div>
+
             <Badge
               variant="accent"
               dot
@@ -126,19 +144,20 @@ export default function HomePage() {
               className="text-4xl md:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight"
               style={{ color: '#FFFFFF', fontFamily: "'Poppins', sans-serif" }}
             >
-              Leading Manufacturer of{' '}
+              Best{' '}
               <span style={{ color: '#22D3EE' }}>
-                Industrial Plastic Containers
+                Jerry Can  & HDPE Jerry Can Supplier
               </span>
+              {' '}in India
             </h1>
 
             <p
               className="text-base md:text-lg leading-relaxed max-w-lg"
               style={{ color: 'rgba(255,255,255,0.78)' }}
             >
-              Delivering high-quality plastic packaging solutions with over{' '}
-              <strong style={{ color: '#ffffff' }}>30 years of expertise</strong> and large-scale production
-              capabilities across Maharashtra and beyond.
+              Ganesh Plasto Pack Barshi - Leading Jerry Can Manufacturer and HDPE Jerry Can Supplier with{' '}
+              <strong style={{ color: '#ffffff' }}>30+ years of expertise</strong>. Best gerry can manufacturer in India with large-scale production capabilities.
+              Serving pan-India with high-quality plastic packaging solutions for industrial, chemical, and food sectors.
             </p>
 
             {/* CTA buttons — stack full-width on mobile */}
@@ -216,7 +235,7 @@ export default function HomePage() {
         <SectionHeader
           badge="Company Snapshot"
           title="Numbers That Speak"
-          subtitle="Decades of manufacturing excellence, reflected in every unit we produce."
+          subtitle="Ganesh Plasto Pack Barshi - Best HDPE Jerry Can Manufacturer & Supplier with decades of manufacturing excellence reflected in every unit we produce."
         />
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">

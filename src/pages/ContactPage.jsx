@@ -117,9 +117,9 @@ export default function ContactPage() {
         </h1>
         <p className="text-base leading-relaxed max-w-xl"
           style={{ color: 'var(--color-text-secondary)' }}>
-          Have a bulk requirement, need a custom quote, or just want to learn
-          more? Fill the form or reach us directly — we typically respond
-          within a few hours.
+          Contact Ganesh Plasto Pack - Best Jerry Can Manufacturer in Barshi for bulk requirements, 
+          custom quotes, or HDPE Jerry Can Supplier inquiries. We typically respond
+          within a few hours. Call us today at {siteConfig.brand.phone}.
         </p>
       </div>
 

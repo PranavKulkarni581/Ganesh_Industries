@@ -43,9 +43,10 @@ export default function Navbar() {
         >
           {/* Brand logo image */}
           <img
-            src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779697284/3970a97b-bcf8-4a54-b29c-5769f9920714.png"
-            alt="Ganesh Plasto Pack Logo"
+            src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779891101/8a0b8620-7e17-498d-9c44-1f996c262384.png"
+            alt="Ganesh Plasto Pack Logo - Jerry Can Manufacturer"
             className="h-9 w-auto shrink-0"
+            style={{ objectFit: 'contain', backgroundColor: 'transparent', borderRadius: '6px' }}
           />
 
           <span
