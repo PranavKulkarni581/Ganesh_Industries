@@ -206,13 +206,13 @@ export default function HomePage() {
           {/* Right — hero image */}
           <div
             className="overflow-hidden rounded-xl reveal reveal-delay-1 relative"
-            style={{ minHeight: 380, boxShadow: '0 16px 48px rgba(0,0,0,0.25)' }}
+            style={{ minHeight: 'clamp(200px, 60vw, 380px)', boxShadow: '0 16px 48px rgba(0,0,0,0.25)' }}
           >
             <img
               src={IMG.hero}
               alt="Industrial plastic manufacturing facility"
-              className="img-reveal w-full h-full object-cover"
-              style={{ minHeight: 380 }}
+              className="img-reveal w-full h-full object-cover object-left md:object-center"
+              style={{ minHeight: 'clamp(200px, 60vw, 380px)' }}
             />
             {/* Subtle blue tint overlay */}
             <div
@@ -344,7 +344,7 @@ export default function HomePage() {
             src={IMG.factory}
             alt="Ganesh Plasto Pack factory floor"
             className="img-reveal w-full object-cover"
-            style={{ height: 420 }}
+            style={{ height: 'clamp(180px, 70vw, 480px)' }}
             /* TODO: replace with real factory photograph */
           />
         </Card>
@@ -508,7 +508,7 @@ export default function HomePage() {
             src={IMG.csr}
             alt="Community service initiative"
             className="w-full object-cover"
-            style={{ height: 380 }}
+            style={{ height: 'clamp(180px, 70vw, 450px)' }}
             /* TODO: replace with actual CSR photograph */
           />
         </Card>
