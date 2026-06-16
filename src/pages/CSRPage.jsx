@@ -24,7 +24,7 @@ const PILLARS = [
   {
     icon: Users,
     title: 'Workforce Trust',
-    badge: '10+ Year Loyalty',
+    badge: '25+ Year Loyalty',
     emotion: 'Trust',
     desc: 'Many of our factory workers and staff have been with Ganesh Plasto Pack for over a decade. We foster long-term relationships through fair wages, safe working conditions, skill development opportunities, and a culture where every individual is valued. Our low attrition rate speaks louder than any certification.',
     quote: '"Our people are our greatest product. Every unit they make carries their pride."',

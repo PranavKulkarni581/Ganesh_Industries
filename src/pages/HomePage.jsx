@@ -23,8 +23,8 @@ const IMG = {
 
 /* ─── Data ─────────────────────────────────────────────────────────── */
 const STATS = [
-  { icon: Award,   value: '30+',     label: 'Years Experience',       sub: 'Since 1994' },
-  { icon: Factory, value: '85,000+', label: 'Production / Day',       sub: 'Units capacity' },
+  { icon: Award,   value: '32+',     label: 'Years Experience',       sub: 'Since 1994' },
+  { icon: Factory, value: '85,000+', label: 'Pcs / Day',       sub: 'Units capacity' },
   { icon: Package, value: '200+',    label: 'Products',                sub: 'Across categories' },
   { icon: Truck,   value: 'Multi',   label: 'State Distribution',      sub: 'Pan-India reach' },
 ];
@@ -48,8 +48,8 @@ const INDUSTRIES = [
 
 const INFRA_POINTS = [
   '32 fully automated blow-moulding machines',
-  '85,000+ units daily production capacity',
-  'Own fleet of delivery trucks',
+  '85,000+ pcs daily production capacity',
+  'Own fleet of 32 delivery trucks',
   'ISO-compliant quality control lab',
 ];
 
@@ -146,7 +146,7 @@ export default function HomePage() {
             >
               Best{' '}
               <span style={{ color: '#22D3EE' }}>
-                Jerry Can  & HDPE Jerry Can Supplier
+                 HDPE Blowmoulding Jerry Can Supplier
               </span>
               {' '}in India
             </h1>
@@ -156,8 +156,8 @@ export default function HomePage() {
               style={{ color: 'rgba(255,255,255,0.78)' }}
             >
               Ganesh Plasto Pack Barshi - Leading Jerry Can Manufacturer and HDPE Jerry Can Supplier with{' '}
-              <strong style={{ color: '#ffffff' }}>30+ years of expertise</strong>. Best gerry can manufacturer in India with large-scale production capabilities.
-              Serving pan-India with high-quality plastic packaging solutions for industrial, chemical, and food sectors.
+              <strong style={{ color: '#ffffff' }}>32+ years of expertise</strong>. Best jerry can manufacturer with large-scale production capacity.
+              Serving high-quality plastic packaging solutions for industrial, chemical, and food sectors.
             </p>
 
             {/* CTA buttons — stack full-width on mobile */}
@@ -198,7 +198,7 @@ export default function HomePage() {
                 className="font-mono text-[11px] uppercase tracking-[0.15em]"
                 style={{ color: 'rgba(255,255,255,0.65)' }}
               >
-                ISO Certified · Pan-India Delivery · 85K+ Units/Day
+                ISO Certified · 85K+ Pcs/Day
               </span>
             </div>
           </div>
@@ -374,25 +374,33 @@ export default function HomePage() {
           </p>
 
           {/* Points */}
-          <ul className="flex flex-col gap-3">
-            {INFRA_POINTS.map((point) => (
-              <li key={point} className="flex items-start gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
+            {INFRA_POINTS.map((point, idx) => (
+              <div
+                key={point}
+                className="flex items-start gap-3 p-4 rounded-lg border-2 transition-all duration-300 hover:shadow-md"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(11, 94, 215, 0.08) 0%, rgba(34, 211, 238, 0.04) 100%)',
+                  borderColor: 'var(--color-accent)',
+                  borderOpacity: 0.3
+                }}
+              >
                 <IconContainer
                   size="sm"
                   variant="recessed"
-                  icon={<CheckCircle2 size={14} />}
+                  icon={<CheckCircle2 size={18} />}
                   color="var(--color-accent)"
                   className="mt-0.5 shrink-0"
                 />
                 <span
-                  className="text-sm leading-relaxed"
-                  style={{ color: 'var(--color-text-secondary)' }}
+                  className="text-sm font-semibold leading-relaxed"
+                  style={{ color: 'var(--color-text-primary)' }}
                 >
                   {point}
                 </span>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
 
           <Button as={Link} to="/infrastructure" variant="ghost" size="md">
             Explore Our Infrastructure <ArrowRight size={15} />

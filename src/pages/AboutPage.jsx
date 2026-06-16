@@ -17,20 +17,20 @@ const IMG = {
 const FIRST_GEN = [
   {
     name:   'Rajkumar Kankariya',
-    role:   'Founder & Managing Director',
+    role:   'Founder',
     bio:    'The visionary who founded Ganesh Plasto Pack in 1993, Rajkumar Ji laid the cornerstone of the company with a relentless focus on quality, ethics, and trust. His pioneering spirit transformed a single-unit facility into a 32-machine industrial powerhouse.',
     initials: 'RK',
   },
   {
     name:   'Gautam Kankariya',
-    role:   'Co-Founder & Director',
+    role:   'Founder',
     qualification: 'BCom',
     bio:    'With deep expertise in business operations and financial management, Gautam Ji has been instrumental in building robust distribution networks and forging long-term client relationships across agro-chemical, FMCG, and pharma sectors.',
     initials: 'GK',
   },
   {
     name:   'Kishor Kankariya',
-    role:   'Co-Founder & Director – Operations',
+    role:   'Founder',
     qualification: 'BCom',
     bio:    'A seasoned entrepreneur with deep roots in the Maharashtra industrial belt, Kishor Ji has driven operational excellence and scaled the company\'s production capabilities to serve 200+ product SKUs across 6 categories.',
     initials: 'KK',
@@ -40,7 +40,6 @@ const FIRST_GEN = [
 const NEXT_GEN = [
   {
     name:   'Yash Kankariya',
-    role:   'Director – Finance & Strategy',
     qualification: 'BBA (Finance & Management)',
     institution: 'MIT, Pune',
     bio:    'Armed with a degree in Finance & Management from MIT Pune, Yash brings modern financial strategies, data-driven decision making, and fresh business perspectives to steer the company\'s growth into new markets.',
@@ -48,7 +47,6 @@ const NEXT_GEN = [
   },
   {
     name:   'Aditya Kankariya',
-    role:   'Director – Production & Innovation',
     qualification: 'BE Production Engineering',
     institution: 'Jain University, Bangalore',
     bio:    'With a BE in Production Engineering from Jain University Bangalore, Aditya drives manufacturing innovation, process optimization, and technology upgrades to keep Ganesh Plasto Pack at the industry\'s cutting edge.',
@@ -60,7 +58,7 @@ const NEXT_GEN = [
 const TIMELINE = [
   { year: '1993', title: 'Founded', desc: 'Ganesh Plasto Pack established in Barshi, Maharashtra with a small blow-moulding unit.' },
   { year: '2000', title: 'Expansion', desc: 'Doubled machine capacity. Entered the agro-chemical and edible oil packaging segments.' },
-  { year: '2008', title: 'ISO Certification', desc: 'Achieved ISO quality management certification. Began supplying to multi-state clients.' },
+  // { year: '2008', title: 'ISO Certification', desc: 'Achieved ISO quality management certification. Began supplying to multi-state clients.' },
   { year: '2015', title: 'Fleet & Logistics', desc: 'Added own fleet of delivery trucks for direct pan-India distribution.' },
   { year: '2020', title: '32 Machines', desc: 'Scaled to 32 fully automated blow-moulding machines, producing 85,000+ units per day.' },
   { year: '2026', title: 'Today', desc: 'Serving 200+ product SKUs across 6 categories with a trusted workforce of 10+ year veterans.' },
@@ -71,7 +69,7 @@ const VALUES = [
   { icon: Target,   title: 'Our Mission',   desc: 'To deliver precision-engineered plastic packaging that meets the highest quality and safety standards — consistently, at scale.' },
   { icon: Eye,      title: 'Our Vision',    desc: 'To be Maharashtra\'s most trusted packaging manufacturer, expanding across India while upholding community and environmental values.' },
   { icon: Zap,      title: 'Quality First', desc: 'Every unit is inspected before dispatch. Virgin-grade raw materials. Zero compromise on dimensional accuracy or leak-proof performance.' },
-  { icon: Users,    title: 'Our People',    desc: 'A loyal, skilled workforce — many with 10+ years of service — forms the backbone of our consistent output and customer trust.' },
+  { icon: Users,    title: 'Our People',    desc: 'A loyal, skilled workforce — many with 25+ years of service — forms the backbone of our consistent output and customer trust.' },
 ];
 
 /* ═══════════════════════════════════════════════════════════════════ */
@@ -94,7 +92,7 @@ export default function AboutPage() {
             className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight"
             style={{ color: 'var(--color-text-primary)', fontFamily: "'Poppins', sans-serif" }}
           >
-            30+ Years of{' '}
+            32+ Years of{' '}
             <span style={{ color: '#0B5ED7' }}>Jerry Can Manufacturing</span>{' '}
             Excellence in Barshi
           </h1>
@@ -105,8 +103,8 @@ export default function AboutPage() {
             Founded in 1993 in Barshi, Maharashtra, Ganesh Plasto Pack has grown
             from a single-unit blow-moulding facility into one of the region's
             most trusted Jerry Can Manufacturers and HDPE Jerry Can Suppliers. Three
-            decades of craftsmanship, 85,000+ units a day, and an unwavering
-            commitment to quality define who we are. Best gerry can manufacturer
+            decades of craftsmanship, 85,000+ pcs a day, and an unwavering
+            commitment to quality define who we are. One of the best gerry can manufacturer
             and best HDPE can manufacturer in India, serving across industries.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -133,10 +131,10 @@ export default function AboutPage() {
       {/* ── §2 Stats strip ──────────────────────────────────────── */}
       <section ref={refStats} className="grid grid-cols-2 lg:grid-cols-4 gap-5">
         {[
-          { icon: Award,     value: '30+',     label: 'Years in Business' },
-          { icon: TrendingUp,value: '85,000+', label: 'Units / Day' },
+          { icon: Award,     value: '32+',     label: 'Years in Business' },
+          { icon: TrendingUp,value: '85,000+', label: 'Pcs / Day' },
           { icon: CheckCircle2,value: '200+',  label: 'Product SKUs' },
-          { icon: Users,     value: '10+',     label: 'Avg. Employee Tenure (yrs)' },
+          { icon: Users,     value: '25+',     label: 'Avg. Employee Tenure (yrs)' },
         ].map(({ icon: Icon, value, label }, i) => (
           <Card key={label} screws vents={false} padding="lg" className={`text-center flex flex-col items-center gap-3 reveal reveal-delay-${i + 1}`}>
             <IconContainer size="md" variant="recessed" icon={<Icon size={20} />} color="#0B5ED7" />
@@ -148,7 +146,7 @@ export default function AboutPage() {
 
       {/* ── §3 Mission / Vision / Values ────────────────────────── */}
       <section ref={refMission}>
-        <div className="text-center mb-10 reveal">
+        <div className=" mb-10 reveal">
           <Badge variant="recessed">Who We Are</Badge>
           <h2 className="text-3xl font-extrabold mt-3 tracking-tight"
             style={{ color: 'var(--color-text-primary)' }}>
@@ -514,7 +512,7 @@ export default function AboutPage() {
                     </h3>
 
                     {/* Role pill */}
-                    <span style={{
+                    {/* <span style={{
                       display: 'inline-block',
                       fontSize: 10, fontWeight: 700,
                       textTransform: 'uppercase',
@@ -527,7 +525,7 @@ export default function AboutPage() {
                       border: '1px solid rgba(20,184,166,0.2)',
                     }}>
                       {member.role}
-                    </span>
+                    </span> */}
 
                     {/* Qualification + Institution */}
                     <div style={{

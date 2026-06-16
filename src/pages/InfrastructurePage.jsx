@@ -17,8 +17,8 @@ const IMG = {
 /* ── Infra highlights ────────────────────────────────────────────── */
 const HIGHLIGHTS = [
   { icon: Settings2,  value: '32',        label: 'Blow-Moulding Machines',   sub: 'Fully automated lines' },
-  { icon: Gauge,      value: '85,000+',   label: 'Units Per Day',            sub: 'Production capacity' },
-  { icon: Truck,      value: 'Own Fleet', label: 'Delivery Trucks',          sub: 'Pan-India logistics' },
+  { icon: Gauge,      value: '85,000+',   label: 'Pcs Per Day',            sub: 'Production capacity' },
+  { icon: Truck,      value: 'Own Fleet', label: '32 Delivery Trucks',          sub: 'Pan-India logistics' },
   { icon: Warehouse,  value: 'Large',     label: 'Warehouse Capacity',       sub: 'Organised bulk storage' },
   { icon: ShieldCheck,value: 'ISO',       label: 'Certified Quality Lab',    sub: 'In-house QC testing' },
 ];
@@ -137,8 +137,8 @@ export default function InfrastructurePage() {
           <h2 className="text-3xl font-extrabold tracking-tight"
             style={{ color: 'var(--color-text-primary)', fontFamily: "'Poppins', sans-serif" }}>
             Own Fleet.{' '}
-            <span style={{ color: '#0B5ED7' }}>Pan-India</span>{' '}
-            Delivery.
+            <span style={{ color: '#0B5ED7' }}>Delivery</span>{' '}
+            {/* Delivery. */}
           </h2>
           <p className="text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
             Our dedicated fleet of delivery trucks enables us to dispatch

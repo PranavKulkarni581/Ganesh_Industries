@@ -10,7 +10,6 @@ import useScrollReveal from '../../hooks/useScrollReveal';
 
 /* ── Sister Firms Data ─────────────────────────────────────── */
 const SISTER_FIRMS = [
-  { name: 'Gautam Rajkumar Kankariya' },
   { name: 'Ganesh Plasto Pack' },
   { name: 'Yashraj Industries' },
   { name: 'Reliable Industries' },
