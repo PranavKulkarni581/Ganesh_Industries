@@ -15,8 +15,8 @@ const SISTER_FIRMS = [
   { name: 'Reliable Industries' },
   { name: 'Aditya Roadlines' },
   { name: 'Sunplast Industries' },
-  { name: 'R.K. Club & Resort' }, 
   { name: 'Adiraj Industries' }, 
+  { name: 'R.K. Club & Resort' }, 
 ];
 
 /* ── Inline styles (no extra CSS file needed) ──────────────── */

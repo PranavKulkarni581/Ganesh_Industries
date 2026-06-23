@@ -49,9 +49,8 @@ export default function InfrastructurePage() {
         </h1>
         <p className="text-base leading-relaxed max-w-2xl"
           style={{ color: 'var(--color-text-secondary)' }}>
-          Our Barshi facility is equipped with state-of-the-art machinery,
-          an in-house QC lab, a large warehousing wing, and a dedicated fleet —
-          giving us end-to-end control from raw material to doorstep delivery.
+          Our Barshi facility is equipped with advanced machinery, an in-house quality control lab, spacious warehousing, and dedicated delivery vehicles for manufacturing Jerry Cans and HDPE Cans.
+          This allows us to maintain complete control from raw material sourcing to final delivery.
         </p>
       </div>
 
@@ -86,7 +85,7 @@ export default function InfrastructurePage() {
           </h2>
           <p className="text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
             Our production floor runs 32 fully automated extrusion
-            blow-moulding machines capable of producing containers ranging
+            blow-moulding machines capable of producing jerry and hdpe cans ranging
             from 100ml to 25L. Continuous operation ensures consistent
             output even for large bulk orders.
           </p>
@@ -136,15 +135,12 @@ export default function InfrastructurePage() {
           <Badge variant="recessed">Logistics</Badge>
           <h2 className="text-3xl font-extrabold tracking-tight"
             style={{ color: 'var(--color-text-primary)', fontFamily: "'Poppins', sans-serif" }}>
-            Own Fleet.{' '}
-            <span style={{ color: '#0B5ED7' }}>Delivery</span>{' '}
+            Own {' '}
+            <span style={{ color: '#0B5ED7' }}>Delivery Network</span>{' '}
             {/* Delivery. */}
           </h2>
           <p className="text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
-            Our dedicated fleet of delivery trucks enables us to dispatch
-            bulk orders directly to clients across Maharashtra and other
-            states — without dependency on third-party logistics,
-            ensuring on-time, damage-free deliveries.
+           Our dedicated delivery vehicles enable us to dispatch bulk orders directly to clients across Maharashtra and other states, reducing reliance on third-party logistics and ensuring timely, safe, and damage-free deliveries.
           </p>
           <ul className="flex flex-col gap-3">
             {[

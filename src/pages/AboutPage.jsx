@@ -59,7 +59,7 @@ const TIMELINE = [
   { year: '1993', title: 'Founded', desc: 'Ganesh Plasto Pack established in Barshi, Maharashtra with a small blow-moulding unit.' },
   { year: '2000', title: 'Expansion', desc: 'Doubled machine capacity. Entered the agro-chemical and edible oil packaging segments.' },
   // { year: '2008', title: 'ISO Certification', desc: 'Achieved ISO quality management certification. Began supplying to multi-state clients.' },
-  { year: '2015', title: 'Fleet & Logistics', desc: 'Added own fleet of delivery trucks for direct pan-India distribution.' },
+  { year: '2015', title: 'Transport Network & Logistics', desc: 'Added own fleet of delivery trucks for direct pan-India distribution.' },
   { year: '2020', title: '32 Machines', desc: 'Scaled to 32 fully automated blow-moulding machines, producing 85,000+ units per day.' },
   { year: '2026', title: 'Today', desc: 'Serving 200+ product SKUs across 6 categories with a trusted workforce of 10+ year veterans.' },
 ];
@@ -104,7 +104,7 @@ export default function AboutPage() {
             from a single-unit blow-moulding facility into one of the region's
             most trusted Jerry Can Manufacturers and HDPE Jerry Can Suppliers. Three
             decades of craftsmanship, 85,000+ pcs a day, and an unwavering
-            commitment to quality define who we are. One of the best gerry can manufacturer
+            commitment to quality define who we are. One of the best jerry can manufacturer
             and best HDPE can manufacturer in India, serving across industries.
           </p>
           <div className="flex flex-wrap gap-3">

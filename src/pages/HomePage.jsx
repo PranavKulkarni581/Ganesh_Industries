@@ -49,7 +49,7 @@ const INDUSTRIES = [
 const INFRA_POINTS = [
   '32 fully automated blow-moulding machines',
   '85,000+ pcs daily production capacity',
-  'Own fleet of 32 delivery trucks',
+  'Own network of 32 delivery trucks',
   'ISO-compliant quality control lab',
 ];
 
@@ -155,7 +155,7 @@ export default function HomePage() {
               className="text-base md:text-lg leading-relaxed max-w-lg"
               style={{ color: 'rgba(255,255,255,0.78)' }}
             >
-              Ganesh Plasto Pack Barshi - Leading Jerry Can Manufacturer and HDPE Jerry Can Supplier with{' '}
+              Ganesh Plasto Pack Barshi - Best HDPE Jerry Can Manufacturer & Supplier with{' '}
               <strong style={{ color: '#ffffff' }}>32+ years of expertise</strong>. Best jerry can manufacturer with large-scale production capacity.
               Serving high-quality plastic packaging solutions for industrial, chemical, and food sectors.
             </p>
@@ -367,11 +367,9 @@ export default function HomePage() {
             className="text-base leading-relaxed"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            Our state-of-the-art facility in Barshi, Maharashtra houses
-            advanced blow-moulding machinery, a dedicated QC lab, and
-            an in-house logistics fleet — ensuring every order is delivered
-            on time, every time.
-          </p>
+           Our modern facility in Barshi, Maharashtra is equipped with advanced blow-moulding machines for manufacturing high-quality <strong> Jerry Cans</strong> and <strong>HDPE Cans</strong>. 
+           We have a dedicated quality control lab and our own transport network, helping us ensure that every order is delivered safely and on time.
+          </p> 
 
           {/* Points */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
