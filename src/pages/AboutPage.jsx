@@ -9,8 +9,8 @@ import useScrollReveal from '../hooks/useScrollReveal';
 
 /* ── Images ─────────────────────────────────────────────────────── */
 const IMG = {
-  hero:    'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777108567/44233288-9df1-4818-ba09-cc53ed93240d.png',
-  team:    'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&h=500&fit=crop&q=85', 
+  hero:    'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782219316/ChatGPT_Image_Jun_23_2026_06_23_03_PM_ngja5n.png',
+  team:    'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782219806/1a1fbead-1157-4353-b7b1-7d482fed6b88.png', 
 };
   
 /* ── Founders ────────────────────────────────────────────────────── */

@@ -11,7 +11,7 @@ import useScrollReveal from '../hooks/useScrollReveal';
 const IMG = {
   machines: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777966752/photo-collage.png_fjjrhl.png',
   trucks:   'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776882251/d31380b2-d75e-40d1-8789-c70b2dc6fc98.png',
-  warehouse:'https://res.cloudinary.com/dlh5prjhb/image/upload/v1777108888/c0d9e0df-2a75-4353-b920-98e14268e3cc.png',
+  warehouse:'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782219316/ChatGPT_Image_Jun_23_2026_06_23_03_PM_ngja5n.png',
 };
 
 /* ── Infra highlights ────────────────────────────────────────────── */
@@ -175,10 +175,10 @@ export default function InfrastructurePage() {
               /* TODO: replace with actual warehouse photograph */ />
             <div className="absolute inset-0 flex flex-col justify-end p-8 gap-2"
               style={{ background: 'linear-gradient(to top, rgba(45,52,54,0.8),transparent 55%)' }}>
-              <h2 className="text-2xl font-extrabold" style={{ color: '#fff' }}>
+              <h2 className="text-2xl font-extrabold" style={{ color: '#000000' , marginLeft: '15px'}}>
                 Large-Scale Warehousing
               </h2>
-              <p className="text-sm max-w-xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
+              <p className="text-sm max-w-xl" style={{ color: 'rgba(0, 0, 0, 0.8)' , marginLeft: '15px'}}>
                 Organised storage for finished goods ensures rapid order picking,
                 batch traceability, and efficient dispatch operations.
               </p>

@@ -290,9 +290,9 @@ export default function ContactPage() {
             */}
             <iframe
               title="Ganesh Plasto Pack Location — Barshi, Maharashtra"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30568.10879374305!2d75.68741!3d18.23407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcfc4d4e5c49b2b%3A0xa5d58a4d2b1e3b7f!2sBarshi%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps?q=No.%2068%2F7%2C%20Industrial%20Estate%20No.%202%2C%20near%20Sangavi%20Office%2C%20Market%20Yard%2C%20Barshi%2C%20Maharashtra%20-%20413401&output=embed"
               width="100%"
-              height="220"
+              height="320"
               style={{ border: 0, display: 'block' }}
               allowFullScreen
               loading="lazy"
