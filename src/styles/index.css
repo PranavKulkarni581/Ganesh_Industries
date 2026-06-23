@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────
+   DESIGN SYSTEM: CSS CUSTOM PROPERTIES
+───────────────────────────────────────── */
+:root {
+  /* ── Core Color Palette ── */
+  --color-primary:        #0B5ED7;
+  --color-dark:           #0A2540;
+  --color-teal:           #14B8A6;
+  --color-cyan:           #22D3EE;
+
+  /* ── Background & Surface ── */
+  --color-bg:             #F8FAFC;
+  --color-surface:        #FFFFFF;
+  --color-surface-2:      #F1F5F9;
+
+  /* ── Text ── */
+  --color-text-primary:   #0F172A;
+  --color-text-secondary: #64748B;
+  --color-text-on-dark:   #FFFFFF;
+
+  /* ── Border ── */
+  --color-border:         #E2E8F0;
+
+  /* ── Accent (kept for backward compat) ── */
+  --color-accent:         #0B5ED7;
+  --color-accent-alt:     #14B8A6;
+
+  /* ── Hero / CTA Gradient ── */
+  --gradient-hero: linear-gradient(135deg, #0A2540 0%, #0B5ED7 50%, #14B8A6 100%);
+  --gradient-btn:  linear-gradient(135deg, #0B5ED7 0%, #14B8A6 100%);
+
+  /* ── Shadows (clean, NO neumorphism) ── */
+  --shadow-card:    0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 20px 48px rgba(0, 0, 0, 0.12);
+  --shadow-btn:     0 10px 25px rgba(11, 94, 215, 0.25);
+  --shadow-btn-hover: 0 16px 32px rgba(11, 94, 215, 0.38);
+  --shadow-navbar:  0 1px 24px rgba(10, 37, 64, 0.08);
+
+  /* ── Typography ── */
+  --font-heading: 'Poppins', system-ui, sans-serif;
+  --font-sans:    'Inter', system-ui, sans-serif;
+}
+
+/* ─────────────────────────────────────────
+   BASE RESET & GLOBAL STYLES
+───────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* ─────────────────────────────────────────
+   COMPONENT LAYER
+───────────────────────────────────────── */
+@layer components {
+
+/* ── Premium Card (flat + shadow, NO neumorphism) ── */
+.premium-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.premium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* ── Legacy: kept class names so old components still work ── */
+.neu-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.neu-card:hover,
+.neu-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Removed neumorphic pressed/recessed — replaced with clean flat variants */
+.neu-pressed  { background: var(--color-surface-2); border-radius: 12px; }
+.neu-recessed { background: var(--color-surface-2); border-radius: 12px; }
+
+/* ── Primary Button ── */
+.btn-primary {
+  background: var(--gradient-btn);
+  color: #ffffff;
+  border: none;
+  border-radius: 11px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.2s ease;
+  outline: none;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-btn-hover);
+  filter: brightness(1.08);
+}
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-btn);
+}
+
+/* ── Secondary Button ── */
+.btn-secondary {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 11px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  outline: none;
+}
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ── Ghost Button ── */
+.btn-ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid rgba(11, 94, 215, 0.35);
+  border-radius: 11px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.btn-ghost:hover {
+  background: rgba(11, 94, 215, 0.06);
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+
+/* ── Input ── */
+.neu-input {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.neu-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.15);
+}
+
+/* ── Removed neumorphic button classes — mapped to clean variants ── */
+.neu-btn {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 11px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.neu-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.neu-btn:active { transform: translateY(0); }
+
+.neu-btn-accent {
+  background: var(--gradient-btn);
+  color: #ffffff;
+  border: none;
+  border-radius: 11px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.neu-btn-accent:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-btn-hover);
+  filter: brightness(1.08);
+}
+.neu-btn-accent:active { transform: translateY(0); }
+
+/* Removed press effects now replaced by translateY(0) on :active */
+.neu-btn-press:active        { transform: translateY(1px) !important; }
+.neu-btn-accent-press:active { transform: translateY(1px) !important; }
+
+/* ─────────────────────────────────────────
+   SCROLLBAR — clean blue tint
+───────────────────────────────────────── */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: var(--color-surface-2); }
+::-webkit-scrollbar-thumb  { background: #CBD5E1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }
+
+/* ─────────────────────────────────────────
+   LAYOUT UTILITIES
+───────────────────────────────────────── */
+.page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .page-content { gap: 64px; }
+}
+.section    { margin-top: 112px; }
+.section-sm { margin-top: 56px; }
+@media (max-width: 768px) {
+  .section    { margin-top: 64px; }
+  .section-sm { margin-top: 36px; }
+}
+
+} /* end @layer components */
+
+/* ═════════════════════════════════════════
+   MICRO-INTERACTIONS & ANIMATIONS
+═════════════════════════════════════════ */
+@layer components {
+
+/* ── Scroll Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity  0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+
+/* ── Image Effects ── */
+.img-reveal {
+  filter: grayscale(20%) brightness(0.97);
+  transition: filter 0.4s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.img-reveal:hover,
+.group:hover .img-reveal {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.05);
+}
+.img-zoom { transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+.group:hover .img-zoom { transform: scale(1.05); }
+
+/* ── Icon Interactions ── */
+.icon-lift {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+}
+.icon-lift:hover {
+  transform: scale(1.15) rotate(8deg);
+  filter: drop-shadow(0 0 6px rgba(11, 94, 215, 0.55));
+}
+
+/* ── LED Pulse (uses new teal/blue) ── */
+@keyframes led-pulse {
+  0%, 100% { opacity: 1;    box-shadow: 0 0 0   0 rgba(11, 94, 215, 0.5); }
+  50%      { opacity: 0.75; box-shadow: 0 0 0 6px rgba(11, 94, 215, 0);   }
+}
+.led-dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--color-teal);
+  animation: led-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  flex-shrink: 0;
+}
+.led-dot-sm { width: 6px; height: 6px; }
+
+/* ── Float ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+.animate-float { animation: float 4s ease-in-out infinite; }
+
+/* ── Shine sweep ── */
+@keyframes shine {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+.shine-sweep {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.14) 50%,
+    transparent 100%
+  );
+  background-size: 200% auto;
+  animation: shine 3.5s linear infinite;
+  pointer-events: none;
+}
+
+/* ── Mobile Polish ── */
+@media (max-width: 640px) {
+  .mobile-full > * { width: 100% !important; }
+  h1 { font-size: clamp(1.75rem, 6vw, 3rem) !important; }
+  h2 { font-size: clamp(1.4rem,  5vw, 2rem) !important; }
+  .neu-card:hover, .premium-card:hover { transform: translateY(-2px); }
+}
+
+/* ── Typography Polish ── */
+p:not([class]) { max-width: 72ch; }
+p.wide { max-width: none; }
+
+strong {
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.mono-value {
+  font-family: monospace;
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+}
+
+/* ── Focus Visible ── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ── Gradient hero section utility ── */
+.hero-gradient {
+  background: var(--gradient-hero);
+}
+
+/* ── Glass effect (for overlays, navbar etc.) ── */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ── Filter grid fade-in ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+} /* end @layer components */
