@@ -129,28 +129,41 @@ export default function HomePage() {
             <div className="flex flex-col gap-6 reveal order-2 lg:order-1">
               {/* Logo */}
               <div className="flex items-center gap-5">
-  <img
-    src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779891101/8a0b8620-7e17-498d-9c44-1f996c262384.png"
-    alt="Ganesh Plasto Pack Logo"
-    className="h-24 w-auto rounded-lg object-contain"
-  />
+                <img
+                  src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779891101/8a0b8620-7e17-498d-9c44-1f996c262384.png"
+                  alt="Ganesh Plasto Pack Logo"
+                  className="h-24 w-auto rounded-lg object-contain"
+                />
 
-  <div>
-    <h3 className="text-white text-4xl font-bold">
-      GANESH PLASTO PACK
-    </h3>
+                <div>
+                  <h3 className="text-white text-4xl font-bold">
+                    GANESH PLASTO PACK
+                  </h3>
 
-    <p className="text-white/70 text-xl mt-2">
-      Best Jerry Can Manufacturer
-    </p>
-  </div>
-</div>
+                  <p className="text-white/70 text-xl mt-2">
+                    Best Jerry Can Manufacturer
+                  </p>
+                </div>
+              </div>
 
               {/* Mobile — trusted badge above mobile image (mobile-only) */}
+              {/* <Badge
+                variant="accent"
+                dot
+                className="block md:hidden mt-4"
+                style={{
+                  background: 'rgba(255,255,255,0.15)',
+                  border: '1px solid rgba(255,255,255,0.25)',
+                  color: '#ffffff',
+                }}
+              >
+                Trusted Since 1994
+              </Badge> */}
+              {/* Trusted badge */}
               <Badge
                 variant="accent"
                 dot
-                className="block lg:hidden mt-4"
+                className="mt-4"
                 style={{
                   background: 'rgba(255,255,255,0.15)',
                   border: '1px solid rgba(255,255,255,0.25)',
@@ -176,10 +189,10 @@ export default function HomePage() {
                 />
               </div>
               {/* Desktop — trusted badge (desktop-only) */}
-              <Badge
+              {/* <Badge
                 variant="accent"
                 dot
-                className="hidden lg:block mt-4"
+                className="hidden md:block mt-4"
                 style={{
                   background: 'rgba(255,255,255,0.15)',
                   border: '1px solid rgba(255,255,255,0.25)',
@@ -187,7 +200,7 @@ export default function HomePage() {
                 }}
               >
                 Trusted Since 1994
-              </Badge>
+              </Badge> */}
 
               <h1
                 className="text-4xl md:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight"
