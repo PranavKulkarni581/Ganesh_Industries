@@ -126,28 +126,44 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-8 py-14 md:px-14 md:py-16">
 
             {/* Left — copy */}
-            <div className="flex flex-col gap-6 reveal">
+            <div className="flex flex-col gap-6 reveal order-2 lg:order-1">
               {/* Logo */}
               <div className="flex items-center gap-5">
-  <img
-    src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779891101/8a0b8620-7e17-498d-9c44-1f996c262384.png"
-    alt="Ganesh Plasto Pack Logo"
-    className="h-24 w-auto rounded-lg object-contain"
-  />
+                <img
+                  src="https://res.cloudinary.com/dlh5prjhb/image/upload/v1779891101/8a0b8620-7e17-498d-9c44-1f996c262384.png"
+                  alt="Ganesh Plasto Pack Logo"
+                  className="h-24 w-auto rounded-lg object-contain"
+                />
 
-  <div>
-    <h3 className="text-white text-2xl font-bold">
-      GANESH PLASTO PACK
-    </h3>
+                <div>
+                  <h3 className="text-white text-4xl font-bold">
+                    GANESH PLASTO PACK
+                  </h3>
 
-    <p className="text-white/70 text-base mt-1">
-      Best Jerry Can Manufacturer
-    </p>
-  </div>
-</div>
+                  <p className="text-white/70 text-xl mt-2">
+                    Best Jerry Can Manufacturer
+                  </p>
+                </div>
+              </div>
+
+              {/* Mobile — trusted badge above mobile image (mobile-only) */}
+              {/* <Badge
+                variant="accent"
+                dot
+                className="block md:hidden mt-4"
+                style={{
+                  background: 'rgba(255,255,255,0.15)',
+                  border: '1px solid rgba(255,255,255,0.25)',
+                  color: '#ffffff',
+                }}
+              >
+                Trusted Since 1994
+              </Badge> */}
+              {/* Trusted badge */}
               <Badge
                 variant="accent"
                 dot
+                className="mt-4"
                 style={{
                   background: 'rgba(255,255,255,0.15)',
                   border: '1px solid rgba(255,255,255,0.25)',
@@ -156,6 +172,35 @@ export default function HomePage() {
               >
                 Trusted Since 1994
               </Badge>
+
+              {/* Mobile — hero image placed under logo/name and above paragraph */}
+              <div className="w-full rounded-xl overflow-hidden reveal reveal-delay-1 relative mt-3 block lg:hidden" style={{ height: 'clamp(160px, 40vw, 280px)', boxShadow: '0 12px 36px rgba(0,0,0,0.18)' }}>
+                <img
+                  src={heroCarouselImages[heroIndex]}
+                  alt="Industrial plastic manufacturing facility"
+                  className="w-full h-full object-cover"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                />
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(10,37,64,0.15) 0%, transparent 60%)',
+                  }}
+                />
+              </div>
+              {/* Desktop — trusted badge (desktop-only) */}
+              {/* <Badge
+                variant="accent"
+                dot
+                className="hidden md:block mt-4"
+                style={{
+                  background: 'rgba(255,255,255,0.15)',
+                  border: '1px solid rgba(255,255,255,0.25)',
+                  color: '#ffffff',
+                }}
+              >
+                Trusted Since 1994
+              </Badge> */}
 
               <h1
                 className="text-4xl md:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight"
@@ -208,8 +253,8 @@ export default function HomePage() {
                 </Button>
               </div>
 
-              {/* Trust strip with LED dot */}
-              <div className="flex items-center gap-3 pt-2">
+              {/* Trust strip with LED dot (hidden on mobile) */}
+              <div className="hidden sm:flex items-center gap-3 pt-2">
                 <span className="led-dot led-dot-sm" aria-hidden="true" style={{ background: '#22D3EE' }} />
                 <span
                   className="font-mono text-[11px] uppercase tracking-[0.15em]"
@@ -222,7 +267,7 @@ export default function HomePage() {
 
             {/* Right — hero image */}
             <div
-              className="overflow-hidden rounded-xl reveal reveal-delay-1 relative"
+              className="hidden lg:block overflow-hidden rounded-xl reveal reveal-delay-1 relative order-1 lg:order-2"
               style={{ height: 'clamp(200px, 60vw, 380px)', boxShadow: '0 16px 48px rgba(0,0,0,0.25)' }}
             >
               <img
