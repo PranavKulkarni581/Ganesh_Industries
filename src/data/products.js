@@ -45,7 +45,7 @@ export const CATEGORIES = [
         id: 'emida',
         name: 'Emida Bottle',
         sizes: ['100ml', '250ml', '500ml', '1L'],
-        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839267/31_fvzmsg.jpg',
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279504/Emida_xrfwpt.jpg',
         description: 'HDPE bottle designed for pesticide and fertilizer storage with high chemical resistance.',
         applications: ['Pesticides', 'Fertilizers', 'Agrochemicals'],
         material: 'HDPE',
@@ -57,7 +57,7 @@ export const CATEGORIES = [
         id: 'handle-bottle-fp',
         name: 'Handle Bottle',
         sizes: ['250ml', '500ml', '1L'],
-        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839255/55_dnrndg.jpg',
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279508/handle_bottle_xcwhow.jpg',
         description: 'Ergonomic handle bottle for easy handling and pouring of agrochemical liquids.',
         applications: ['Pesticides', 'Liquid Fertilizers'],
         material: 'HDPE',
@@ -69,7 +69,7 @@ export const CATEGORIES = [
         id: 'square-bottle',
         name: 'Square Bottle',
         sizes: ['50ml', '100ml', '250ml', '500ml', '1L'],
-        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839258/48_uymlks.jpg',
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279512/square_bottles_awrnkk.jpg',
         description: 'Space-efficient square bottles ideal for agrochemical storage and transport.',
         applications: ['Agrochemicals', 'Retail Packaging'],
         material: 'HDPE',
@@ -105,7 +105,7 @@ export const CATEGORIES = [
         id: 'glypho',
         name: 'Glypho Bottle',
         sizes: ['500ml', '1L', '5L'],
-        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839256/53_w5iqzz.jpg',
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279505/glypho_bottles_dnlu0h.jpg',
         description: 'Designed for herbicide and glyphosate packaging with chemical compatibility.',
         applications: ['Herbicides', 'Weedicides'],
         material: 'HDPE',
@@ -141,7 +141,7 @@ export const CATEGORIES = [
         id: 'handle-barni',
         name: 'Handle Barni',
         sizes: ['500gm', '1kg', '2kg', '5kg', '10kg', '25kg'],
-        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839247/73_mullp7.jpg',
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279507/Handle_Barni_xw7zje.jpg',
         description: 'Heavy-duty barni with handle for powder and granular storage.',
         applications: ['Fertilizer Storage', 'Powders'],
         material: 'HDPE',
@@ -153,7 +153,7 @@ export const CATEGORIES = [
         id: 'wide-mouth-barni',
         name: 'Wide Mouth Barni',
         sizes: ['250gm', '500gm', '1kg'],
-        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839251/63_dw3jkr.jpg',
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279513/Wde_mouth_barni_fbilgs.jpg',
         description: 'Wide-mouth containers for easy filling and dispensing of powders.',
         applications: ['Powder Storage', 'Granules'],
         material: 'HDPE',
@@ -163,9 +163,9 @@ export const CATEGORIES = [
       },
       {
         id: 'meera-bottle',
-        name: 'Meera Bottle (VSI)',
+        name: 'Meera Bottle',
         sizes: ['1L'],
-        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839246/75_gci4i0.jpg',
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279509/Meera_bottle_aak59e.jpg',
         description: 'Standard 1L bottle widely used in agrochemical applications.',
         applications: ['Agrochemicals', 'Liquid Storage'],
         material: 'HDPE',
@@ -189,7 +189,7 @@ export const CATEGORIES = [
   id: 'barni',
   name: 'Barni',
   sizes: [],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279504/Barni_lhurua.jpg',
   description: 'HDPE storage container.',
   applications: ['Storage'],
   material: 'HDPE',
@@ -201,7 +201,7 @@ export const CATEGORIES = [
   id: 'barni-2kg',
   name: '2kg Barni',
   sizes: ['2kg'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279498/2kg_Barni_nlqkf9.jpg',
   description: 'HDPE storage container.',
   applications: ['Storage'],
   material: 'HDPE',
@@ -213,7 +213,7 @@ export const CATEGORIES = [
   id: 'bucket-5kg',
   name: '5kg Bucket',
   sizes: ['5kg'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279503/5kg_Bucket_buypqs.jpg',
   description: 'HDPE bucket.',
   applications: ['Storage'],
   material: 'HDPE',
@@ -225,7 +225,7 @@ export const CATEGORIES = [
   id: 'bucket-10kg',
   name: '10kg Bucket',
   sizes: ['10kg'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279489/10_kg_Bucket_mqedeq.jpg',
   description: 'HDPE bucket.',
   applications: ['Storage'],
   material: 'HDPE',
@@ -237,7 +237,7 @@ export const CATEGORIES = [
   id: 'cross-handle-20l',
   name: '20 Ltr Cross Handle Container',
   sizes: ['20L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279492/20_ltrs_Cross_Handle_it3uq0.jpg',
   description: 'HDPE container.',
   applications: ['Chemical Storage'],
   material: 'HDPE',
@@ -249,7 +249,7 @@ export const CATEGORIES = [
   id: 'mauzer-20l',
   name: '20 Ltr Mauzer Container',
   sizes: ['20L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279495/20_ltrs_mauzer_kdl00a.jpg',
   description: 'HDPE container.',
   applications: ['Bulk Storage'],
   material: 'HDPE',
@@ -261,7 +261,7 @@ export const CATEGORIES = [
   id: 'mauzer-25l',
   name: '25 Ltr Mauzer Container',
   sizes: ['25L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279497/25_ltr_mauzer_ywdqj8.jpg',
   description: 'HDPE container.',
   applications: ['Bulk Storage'],
   material: 'HDPE',
@@ -273,7 +273,7 @@ export const CATEGORIES = [
   id: 'blue-can-35l',
   name: '35 Ltr Blue Can',
   sizes: ['35L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279498/35_ltrs_Blue_Cans_clhsxm.jpg',
   description: 'HDPE industrial can.',
   applications: ['Industrial Storage'],
   material: 'HDPE',
@@ -285,7 +285,7 @@ export const CATEGORIES = [
   id: 'yellow-can-35l',
   name: '35 Ltr Yellow Can',
   sizes: ['35L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279501/35_ltrs_yellow_can_chhaun.jpg',
   description: 'HDPE industrial can.',
   applications: ['Industrial Storage'],
   material: 'HDPE',
@@ -307,7 +307,7 @@ export const CATEGORIES = [
         id: 'radiant-shape',
         name: 'Radiant Shape Container',
         sizes: ['1L', '5L'],
-        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1776839196/5_ltr_radiant_white_2_tsyhb6.jpg',
+        image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279295/5_ltr_radiant_white_2_laq9by.jpg',
         description: 'Durable HDPE containers designed for safe storage and transport of acid-based chemicals.',
         applications: ['Acid Storage', 'Industrial Chemicals'],
         material: 'HDPE',
@@ -355,7 +355,7 @@ export const CATEGORIES = [
   id: 'milky-1ltr',
   name: '1 Ltr Milky Container',
   sizes: ['1L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279295/1_ltr_radiant_milky_2_dzulbh.jpg',
   description: 'HDPE milky container for chemical storage.',
   applications: ['Chemical Storage'],
   material: 'HDPE',
@@ -367,7 +367,7 @@ export const CATEGORIES = [
   id: 'milky-4ltr',
   name: '4 Ltr Milky Container',
   sizes: ['4L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279297/4_ltrs_milky_igtsm5.jpg',
   description: '4L HDPE milky container.',
   applications: ['Chemical Storage'],
   material: 'HDPE',
@@ -379,7 +379,7 @@ export const CATEGORIES = [
   id: 'radiant-milky-1ltr',
   name: '1 Ltr Radiant Milky Container',
   sizes: ['1L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279291/1_ltr_Milky_iywwle.jpg',
   description: 'Radiant style milky chemical container.',
   applications: ['Chemical Storage'],
   material: 'HDPE',
@@ -391,7 +391,7 @@ export const CATEGORIES = [
   id: 'radiant-milky-5ltr',
   name: '5 Ltr Radiant Milky Container',
   sizes: ['5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279295/5_ltr_radiant_white_2_laq9by.jpg',
   description: '5L radiant milky HDPE container.',
   applications: ['Chemical Storage'],
   material: 'HDPE',
@@ -403,7 +403,7 @@ export const CATEGORIES = [
   id: 'radiant-white-5ltr',
   name: '5 Ltr Radiant White Container',
   sizes: ['5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279295/5_ltr_radiant_white_2_laq9by.jpg',
   description: '5L radiant white chemical container.',
   applications: ['Chemical Storage'],
   material: 'HDPE',
@@ -415,7 +415,7 @@ export const CATEGORIES = [
   id: 'container-35ltr',
   name: '35 Ltr Container',
   sizes: ['35L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279299/35_ltrs_mpficq.jpg',
   description: 'Large capacity chemical container.',
   applications: ['Bulk Chemical Storage'],
   material: 'HDPE',
@@ -427,7 +427,7 @@ export const CATEGORIES = [
   id: 'round-white-series',
   name: 'Round White Container Series',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279296/Round_white_1ltr_2_ltr_5ltr_q8v90t.jpg',
   description: 'Round white HDPE chemical containers.',
   applications: ['Chemical Packaging'],
   material: 'HDPE',
@@ -439,7 +439,7 @@ export const CATEGORIES = [
   id: 'half-1ltr-series',
   name: 'Half Ltr & 1 Ltr Container',
   sizes: ['500ml', '1L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279297/half_ltr_1ltr_gbjuhg.jpg',
   description: 'Small capacity chemical containers.',
   applications: ['Chemical Packaging'],
   material: 'HDPE',
@@ -533,7 +533,7 @@ export const CATEGORIES = [
   id: 'adani-yellow',
   name: 'Adani Yellow Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279276/adani_yellow_zs12vj.jpg',
   description: 'Food grade HDPE edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -545,7 +545,7 @@ export const CATEGORIES = [
   id: 'adani-ivory-yellow',
   name: 'Adani Ivory & Yellow Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279276/adani_yellow_zs12vj.jpg',
   description: 'Food grade HDPE edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -557,7 +557,7 @@ export const CATEGORIES = [
   id: 'gemini-ivory',
   name: 'Gemini Ivory Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279283/gemini_ivory_bgt5yu.jpg',
   description: 'Food grade HDPE edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -569,7 +569,7 @@ export const CATEGORIES = [
   id: 'gemini-milky',
   name: 'Gemini Milky Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279283/gemini_milky_mtmzsr.jpg',
   description: 'Food grade HDPE edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -581,7 +581,7 @@ export const CATEGORIES = [
   id: 'gemini-multi',
   name: 'Gemini White Ivory Yellow Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279274/gemini_white_ivory_yellow_s8bslq.jpg',
   description: 'Food grade HDPE edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -593,7 +593,7 @@ export const CATEGORIES = [
   id: 'malharpet-yellow',
   name: 'Malharpet Yellow Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279273/malharpeth_yellow_rtecao.jpg',
   description: 'Food grade edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -605,7 +605,7 @@ export const CATEGORIES = [
   id: 'malharpet-green-yellow',
   name: 'Malharpet Green Yellow Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279272/Malharpeth_green_yellow_hvxebo.jpg',
   description: 'Food grade edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -617,7 +617,7 @@ export const CATEGORIES = [
   id: 'round-ivory',
   name: 'Round Ivory Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279278/round_ivory_allxiw.jpg',
   description: 'Round edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -629,7 +629,7 @@ export const CATEGORIES = [
   id: 'round-milky',
   name: 'Round Milky Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279277/round_milky_k5p5dt.jpg',
   description: 'Round edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -641,7 +641,7 @@ export const CATEGORIES = [
   id: 'round-yellow',
   name: 'Round Yellow Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279277/round_yellow_nrxh5t.jpg',
   description: 'Round edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -653,7 +653,7 @@ export const CATEGORIES = [
   id: 'round-multi',
   name: 'Round White Ivory Yellow Container',
   sizes: ['1L', '2L', '5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279270/round_white_ivory_yellow_lknzpg.jpg',
   description: 'Round edible oil container.',
   applications: ['Edible Oil'],
   material: 'HDPE',
@@ -687,7 +687,7 @@ export const CATEGORIES = [
   id: 'nitesh-sauce-container',
   name: '5kg Nitesh Sauce Container',
   sizes: ['5kg'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279321/5kg_Nitesh_crhgf0.jpg',
   description: 'Food-grade HDPE container for sauce and condiment packaging.',
   applications: ['Sauces', 'Food Industry'],
   material: 'HDPE',
@@ -699,7 +699,7 @@ export const CATEGORIES = [
   id: 'radiant-sauce-container',
   name: '5kg Radiant Sauce Container',
   sizes: ['5kg'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279322/5kg_Radiant_durobj.jpg',
   description: 'Heavy-duty HDPE sauce container suitable for bulk food packaging.',
   applications: ['Tomato Ketchup', 'Sauces'],
   material: 'HDPE',
@@ -720,7 +720,7 @@ export const CATEGORIES = [
       id: 'container-1l-1-2l',
       name: '1L & 1.2L Container',
       sizes: ['1L', '1.2L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279213/1.2_ltr_1_ltr_gbadqd.jpg',
       description: 'Compact HDPE container for retail and general liquid packaging.',
       applications: ['Liquid Storage'],
       material: 'HDPE',
@@ -732,7 +732,7 @@ export const CATEGORIES = [
       id: 'container-2l-3l',
       name: '2L & 3L Container',
       sizes: ['2L', '3L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279214/2_ltr_3_ltr_kpl5k4.jpg',
       description: 'Medium-capacity HDPE container suitable for multiple applications.',
       applications: ['Liquid Storage'],
       material: 'HDPE',
@@ -744,7 +744,7 @@ export const CATEGORIES = [
       id: 'container-4l-5l',
       name: '4L & 5L Container',
       sizes: ['4L', '5L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279211/4_ltr_5_ltr_fzboog.jpg',
       description: 'Durable HDPE container designed for safe storage and transport.',
       applications: ['Storage'],
       material: 'HDPE',
@@ -756,7 +756,7 @@ export const CATEGORIES = [
       id: 'petjar-pushjar-collection',
       name: 'Pet Jar & Push Jar Collection',
       sizes: ['10L', '20L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279206/10_ltr_petjar_20ltr_petjar_20ltr_pushjar_jncaum.jpg',
       description: 'Collection of PET jars and push jars for bulk liquid storage.',
       applications: ['Water Storage'],
       material: 'PET',
@@ -768,7 +768,7 @@ export const CATEGORIES = [
       id: 'heavy-10l',
       name: '10L Heavy Container',
       sizes: ['10L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279207/10_LTR_HEAVY_10_LTR_q54elz.jpg',
       description: 'Heavy-duty HDPE container built for industrial applications.',
       applications: ['Industrial Storage'],
       material: 'HDPE',
@@ -780,7 +780,7 @@ export const CATEGORIES = [
       id: 'petjar-10l',
       name: '10L Pet Jar',
       sizes: ['10L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279209/10_ltr_petjar_lbbtcy.jpg',
       description: 'Food-grade PET jar suitable for liquid and water storage.',
       applications: ['Water Storage'],
       material: 'PET',
@@ -792,7 +792,7 @@ export const CATEGORIES = [
       id: 'petjar-20l',
       name: '20L Pet Jar',
       sizes: ['20L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279218/20_ltr_pet_jar_zdd9uq.jpg',
       description: 'Large-capacity PET jar for commercial liquid storage.',
       applications: ['Bulk Storage'],
       material: 'PET',
@@ -804,7 +804,7 @@ export const CATEGORIES = [
       id: 'pushjar-20l',
       name: '20L Push Jar',
       sizes: ['20L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279208/20_ltr_push_jar_gouupl.jpg',
       description: 'Convenient push-top jar for liquid storage and dispensing.',
       applications: ['Liquid Storage'],
       material: 'PET',
@@ -816,7 +816,7 @@ export const CATEGORIES = [
       id: 'container-20l',
       name: '20L Container',
       sizes: ['20L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279215/20_ltr_hip8pm.jpg',
       description: 'Reliable general-purpose container for commercial use.',
       applications: ['Storage'],
       material: 'HDPE',
@@ -828,7 +828,7 @@ export const CATEGORIES = [
       id: 'waterjar-orange-white',
       name: '25L Water Jar Orange & White',
       sizes: ['25L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279206/25_ltr_water_jar_orange_white_mhqbnv.jpg',
       description: 'Heavy-duty water jar available in dual-color design.',
       applications: ['Water Storage'],
       material: 'PET',
@@ -840,7 +840,7 @@ export const CATEGORIES = [
       id: 'waterjar-orange',
       name: '25L Water Jar Orange',
       sizes: ['25L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279217/25_ltr_water_jar_orange_oyiavp.jpg',
       description: 'Durable orange water jar for long-term storage.',
       applications: ['Water Storage'],
       material: 'PET',
@@ -852,7 +852,7 @@ export const CATEGORIES = [
       id: 'waterjar-white',
       name: '25L Water Jar White',
       sizes: ['25L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279212/25_ltr_water_jar_white_dgylgu.jpg',
       description: 'Food-grade white water jar for drinking water storage.',
       applications: ['Water Storage'],
       material: 'PET',
@@ -864,7 +864,7 @@ export const CATEGORIES = [
       id: 'container-35l-blue',
       name: '35L Blue Container',
       sizes: ['35L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279216/35_ltr_blue_hpldbw.jpg',
       description: 'Large-capacity blue container for industrial use.',
       applications: ['Industrial Storage'],
       material: 'HDPE',
@@ -876,7 +876,7 @@ export const CATEGORIES = [
       id: 'diesel-blue-white',
       name: '35L Diesel Blue & White Container',
       sizes: ['35L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279205/35_ltr_disel_blue_white_unmchf.jpg',
       description: 'Heavy-duty fuel container available in multiple color options.',
       applications: ['Diesel Storage'],
       material: 'HDPE',
@@ -888,7 +888,7 @@ export const CATEGORIES = [
       id: 'diesel-35l',
       name: '35L Diesel Container',
       sizes: ['35L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279217/35_ltr_disel_vyr07o.jpg',
       description: 'Robust diesel storage container for transportation and storage.',
       applications: ['Fuel Storage'],
       material: 'HDPE',
@@ -900,7 +900,7 @@ export const CATEGORIES = [
       id: 'container-35l',
       name: '35L Container',
       sizes: ['35L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279211/35_ltr_tq8jm4.jpg',
       description: 'Industrial-grade HDPE container for bulk liquid storage.',
       applications: ['Bulk Storage'],
       material: 'HDPE',
@@ -912,7 +912,7 @@ export const CATEGORIES = [
       id: 'dispenser',
       name: 'Liquid Dispenser',
       sizes: [],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279210/dispenser_tnye4m.jpg',
       description: 'Easy-to-use dispenser for controlled liquid dispensing.',
       applications: ['Dispensing'],
       material: 'HDPE',
@@ -934,7 +934,7 @@ export const CATEGORIES = [
   id: 'milkcan-blue-3-5l',
   name: '3.5L Milk Can Blue',
   sizes: ['3.5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279198/3.5_ltr_milkcan_blue_no63yt.jpg',
   description: 'Food-grade blue HDPE milk can for dairy storage and transport.',
   applications: ['Milk Storage', 'Dairy Transport'],
   material: 'HDPE',
@@ -946,7 +946,7 @@ export const CATEGORIES = [
   id: 'milkcan-3-5l',
   name: '3.5L Milk Can',
   sizes: ['3.5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279203/3.5_ltr_milkcan_blggmi.jpg',
   description: 'Durable HDPE milk can designed for safe dairy handling.',
   applications: ['Milk Storage'],
   material: 'HDPE',
@@ -958,7 +958,7 @@ export const CATEGORIES = [
   id: 'milkcan-blue-5l',
   name: '5L Milk Can Blue',
   sizes: ['5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279199/5_ltr_milkcan_blue_ltecg6.jpg',
   description: 'Food-grade blue milk can with secure lid.',
   applications: ['Milk Storage'],
   material: 'HDPE',
@@ -970,7 +970,7 @@ export const CATEGORIES = [
   id: 'milkcan-5l',
   name: '5L Milk Can',
   sizes: ['5L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279197/milkcan_3.5ltr_5ltr_10ltr_15ltr_sj9ste.jpg',
   description: 'Strong HDPE milk can for dairy transportation.',
   applications: ['Milk Transport'],
   material: 'HDPE',
@@ -982,7 +982,7 @@ export const CATEGORIES = [
   id: 'milkcan-blue-10l',
   name: '10L Milk Can Blue',
   sizes: ['10L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279199/10_ltr_milkcan_blue_hyjh6d.jpg',
   description: 'Large-capacity blue milk can for dairy use.',
   applications: ['Milk Storage'],
   material: 'HDPE',
@@ -994,7 +994,7 @@ export const CATEGORIES = [
   id: 'milkcan-10l',
   name: '10L Milk Can',
   sizes: ['10L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279202/10_ltr_milkcan_cbqs1g.jpg',
   description: 'HDPE milk can suitable for dairy collection and transport.',
   applications: ['Dairy Collection'],
   material: 'HDPE',
@@ -1006,7 +1006,7 @@ export const CATEGORIES = [
   id: 'milkcan-blue-15l',
   name: '15L Milk Can Blue',
   sizes: ['15L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279200/15ltr_milkcan_blue_wwotys.jpg',
   description: 'Heavy-duty blue milk can for bulk dairy storage.',
   applications: ['Bulk Storage'],
   material: 'HDPE',
@@ -1018,7 +1018,7 @@ export const CATEGORIES = [
   id: 'milkcan-15l',
   name: '15L Milk Can',
   sizes: ['15L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279197/milkcan_3.5ltr_5ltr_10ltr_15ltr_sj9ste.jpg',
   description: 'Large HDPE milk can for commercial dairy operations.',
   applications: ['Commercial Dairy'],
   material: 'HDPE',
@@ -1030,7 +1030,7 @@ export const CATEGORIES = [
   id: 'ghagar-10l',
   name: '10L Ghagar',
   sizes: ['10L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279197/10_ltr_ghagar_m57s1v.jpg',
   description: 'Traditional HDPE ghagar for milk carrying and storage.',
   applications: ['Milk Storage'],
   material: 'HDPE',
@@ -1042,7 +1042,7 @@ export const CATEGORIES = [
   id: 'ghagar-15l',
   name: '15L Ghagar',
   sizes: ['15L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279203/15_ltr_ghagar_aa77hb.jpg',
   description: 'Durable ghagar designed for dairy transport.',
   applications: ['Dairy Transport'],
   material: 'HDPE',
@@ -1054,7 +1054,7 @@ export const CATEGORIES = [
   id: 'ghagar-17l',
   name: '17L Ghagar',
   sizes: ['17L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279204/17_ltr_Ghagar_yzc368.jpg',
   description: 'Large-capacity ghagar for dairy and liquid storage.',
   applications: ['Liquid Storage'],
   material: 'HDPE',
@@ -1076,7 +1076,7 @@ export const CATEGORIES = [
       id: 'emida-bottle',
       name: 'Emida Bottle',
       sizes: ['100ml', '250ml', '500ml', '1L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279309/Emida_yzfer4.jpg',
       description: 'HDPE bottle designed for veterinary medicines and animal healthcare liquids.',
       applications: ['Veterinary Medicines', 'Animal Healthcare'],
       material: 'HDPE',
@@ -1088,7 +1088,7 @@ export const CATEGORIES = [
       id: 'glypho-bottles',
       name: 'Glypho Bottles',
       sizes: ['100ml', '250ml', '500ml', '1L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279307/glypho_bottles_msv466.jpg',
       description: 'Durable HDPE bottles suitable for animal healthcare formulations.',
       applications: ['Veterinary Products', 'Liquid Packaging'],
       material: 'HDPE',
@@ -1100,7 +1100,7 @@ export const CATEGORIES = [
       id: 'handle-bottle',
       name: 'Handle Bottle',
       sizes: ['250ml', '500ml', '1L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279308/handle_bottle_odq7cx.jpg',
       description: 'Easy-grip handle bottle for convenient pouring and handling.',
       applications: ['Veterinary Liquids', 'Farm Use'],
       material: 'HDPE',
@@ -1112,7 +1112,7 @@ export const CATEGORIES = [
       id: 'milk-can-ah',
       name: 'Milk Can',
       sizes: ['3.5L', '5L', '10L', '15L'],
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279306/milkcan_3.5ltr_5ltr_10ltr_15ltr_fr6dmw.jpg',
       description: 'Food-grade milk can suitable for dairy and livestock applications.',
       applications: ['Milk Storage', 'Farm Transport'],
       material: 'HDPE',
@@ -1135,7 +1135,7 @@ export const CATEGORIES = [
   id: 'everest-bottle',
   name: '1L Everest Bottle',
   sizes: ['1L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279288/1_ltr_everest_tdnnuy.jpg',
   description: 'HDPE bottle designed for coolant and engine oil packaging.',
   applications: ['Coolant', 'Engine Oil'],
   material: 'HDPE',
@@ -1147,7 +1147,7 @@ export const CATEGORIES = [
   id: 'square-coolant-bottle',
   name: '1L Square Coolant Bottle',
   sizes: ['1L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279287/1_ltr_square_coolent_xuj1rz.jpg',
   description: 'Square HDPE coolant bottle with efficient storage design.',
   applications: ['Coolant', 'Radiator Fluid'],
   material: 'HDPE',
@@ -1159,7 +1159,7 @@ export const CATEGORIES = [
   id: 'engine-oil-bottle-1l',
   name: '1L Engine Oil Bottle',
   sizes: ['1L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279289/1_ltr_giqhn8.jpg',
   description: 'Durable HDPE bottle for engine oil and lubricant packaging.',
   applications: ['Engine Oil', 'Lubricants'],
   material: 'HDPE',
@@ -1171,7 +1171,7 @@ export const CATEGORIES = [
   id: 'coolant-bottle-500ml-1l',
   name: '500ml & 1L Coolant Bottle',
   sizes: ['500ml', '1L'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279286/500ml_1_ltr_coolent_ewejcd.jpg',
   description: 'Compact coolant bottles for automotive fluid packaging.',
   applications: ['Coolant', 'Automotive Fluids'],
   material: 'HDPE',
@@ -1183,7 +1183,7 @@ export const CATEGORIES = [
   id: 'coolant-bottle-500ml',
   name: '500ml Coolant Bottle',
   sizes: ['500ml'],
-  image: '',
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279290/500ml_otwq2q.jpg',
   description: 'Small HDPE bottle ideal for coolant and additive packaging.',
   applications: ['Coolant', 'Additives'],
   material: 'HDPE',
@@ -1194,8 +1194,8 @@ export const CATEGORIES = [
 {
   id: 'coolant-handle-bottle',
   name: 'Handle Bottle',
-  sizes: ['1L'],
-  image: '',
+  sizes: ['500ml', '1L', '2L'],
+  image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279286/handle_egzd1m.jpg',
   description: 'Easy-grip handle bottle for coolant and engine oil applications.',
   applications: ['Coolant', 'Engine Oil'],
   material: 'HDPE',
@@ -1221,7 +1221,7 @@ export const CATEGORIES = [
 
       sizes: ['1L', '1.2L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279222/1.2_ltr_1_ltr_rrtiel.jpg',
 
       description: 'Food-grade PET bottle ideal for syrups and liquid concentrates.',
 
@@ -1245,7 +1245,7 @@ export const CATEGORIES = [
 
       sizes: ['4L', '5L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279221/4_ltr_5_ltr_wtzddx.jpg',
 
       description: 'Large-capacity syrup container for commercial food packaging.',
 
@@ -1269,7 +1269,7 @@ export const CATEGORIES = [
 
       sizes: ['5kg'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279220/5kg_pickle_barni_t8nsm1.jpg',
 
       description: 'Wide-mouth food-grade container for pickle storage.',
 
@@ -1293,7 +1293,7 @@ export const CATEGORIES = [
 
       sizes: ['10kg'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279220/10_kg_pickle_barni_ufvcbl.jpg',
 
       description: 'Heavy-duty pickle container for bulk food preservation.',
 
@@ -1326,7 +1326,7 @@ export const CATEGORIES = [
 
       sizes: ['10L', '20L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279241/20_ltr_push_jar_agv4oz.jpg',
 
       description: 'Strong water storage jars with push-fit design for easy handling and transportation.',
 
@@ -1350,7 +1350,7 @@ export const CATEGORIES = [
 
       sizes: ['10L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279242/10_ltr_petjar_kwphqp.jpg',
 
       description: 'Compact PET water jar suitable for drinking water storage and delivery.',
 
@@ -1374,7 +1374,7 @@ export const CATEGORIES = [
 
       sizes: ['20L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279250/20_ltr_pet_jar_o4umi5.jpg',
 
       description: 'Heavy-duty PET jar designed for safe storage and transport of drinking water.',
 
@@ -1398,7 +1398,7 @@ export const CATEGORIES = [
 
       sizes: ['20L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279241/20_ltr_push_jar_agv4oz.jpg',
 
       description: 'Large-capacity push jar suitable for commercial and residential water storage.',
 
@@ -1422,7 +1422,7 @@ export const CATEGORIES = [
 
       sizes: ['20L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279248/20_ltr_square_can_oh17co.jpg',
 
       description: 'Space-efficient square container for water and liquid storage applications.',
 
@@ -1446,7 +1446,7 @@ export const CATEGORIES = [
 
       sizes: ['20L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279247/20_ltr_g7voa5.jpg',
 
       description: 'Durable HDPE water can designed for everyday water transportation and storage.',
 
@@ -1470,7 +1470,7 @@ export const CATEGORIES = [
 
       sizes: ['25L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279240/25_ltr_water_jar_orange_white_kwyug7.jpg',
 
       description: 'Premium dual-color water jar suitable for commercial water supply.',
 
@@ -1494,7 +1494,7 @@ export const CATEGORIES = [
 
       sizes: ['25L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279240/25_ltr_water_jar_orange_white_kwyug7.jpg',
 
       description: 'Strong and reusable orange water jar for bulk water storage.',
 
@@ -1518,7 +1518,7 @@ export const CATEGORIES = [
 
       sizes: ['25L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279240/25_ltr_water_jar_orange_white_kwyug7.jpg',
 
       description: 'Food-grade white water jar designed for safe drinking water storage.',
 
@@ -1542,7 +1542,7 @@ export const CATEGORIES = [
 
       sizes: ['35L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279248/35_ltr_disel_lhirhe.jpg',
 
       description: 'Heavy-duty HDPE diesel can suitable for industrial fuel storage and transport.',
 
@@ -1566,7 +1566,7 @@ export const CATEGORIES = [
 
       sizes: ['35L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279245/35_ltr_rchdsq.jpg',
 
       description: 'Large-capacity water can for commercial and industrial water storage needs.',
 
@@ -1590,7 +1590,7 @@ export const CATEGORIES = [
 
       sizes: ['35L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279244/35_ltrs_Mauzer_uftkvo.jpg',
 
       description: 'Robust Mauser-style drum for safe storage and transportation of liquids.',
 
@@ -1614,7 +1614,7 @@ export const CATEGORIES = [
 
       sizes: ['Standard'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279243/dispenser_grqqcm.jpg',
 
       description: 'Convenient dispenser attachment for easy and hygienic water dispensing.',
 
@@ -1647,7 +1647,7 @@ export const CATEGORIES = [
 
       sizes: ['2kg'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279253/2kg_Barni_yibexl.jpg',
 
       description: 'Compact HDPE barni ideal for powder and food product packaging.',
 
@@ -1671,7 +1671,7 @@ export const CATEGORIES = [
 
       sizes: ['5kg'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279252/5kg_barni_tav0vs.jpg',
 
       description: 'Durable HDPE barni suitable for medium-capacity powder storage.',
 
@@ -1695,7 +1695,7 @@ export const CATEGORIES = [
 
       sizes: ['5kg'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279255/5kg_Bucket_fs5xig.jpg',
 
       description: 'Strong HDPE bucket designed for powder and bulk material packaging.',
 
@@ -1719,7 +1719,7 @@ export const CATEGORIES = [
 
       sizes: ['10kg'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279255/10_kg_Bucket_hearwr.jpg',
 
       description: 'Heavy-duty bucket suitable for large-volume powder storage and transport.',
 
@@ -1743,7 +1743,7 @@ export const CATEGORIES = [
 
       sizes: ['5kg', '10kg'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279252/Handle_Barni_smtbdq.jpg',
 
       description: 'Ergonomic handle barni for convenient carrying and storage.',
 
@@ -1767,7 +1767,7 @@ export const CATEGORIES = [
 
       sizes: ['2kg', '5kg', '10kg'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279250/Wide_Mouth_barni_2_mz1ysx.jpg',
 
       description: 'Wide-mouth container allowing easy filling and dispensing of powders.',
 
@@ -1800,7 +1800,7 @@ export const CATEGORIES = [
 
       sizes: ['20L', '35L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279303/20ltr_35_ltr_lock_caps_owacbj.jpg',
 
       description: 'Heavy-duty lock caps designed for secure sealing of large containers.',
 
@@ -1824,7 +1824,7 @@ export const CATEGORIES = [
 
       sizes: ['78mm'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279306/78_hokkvy.jpg',
 
       description: 'Durable threaded cap suitable for a wide range of plastic containers.',
 
@@ -1848,7 +1848,7 @@ export const CATEGORIES = [
 
       sizes: ['79mm'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279305/79_qufyzv.jpg',
 
       description: 'Reliable sealing cap designed for medium and large-mouth containers.',
 
@@ -1872,7 +1872,7 @@ export const CATEGORIES = [
 
       sizes: ['81mm'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279303/81_logarg.jpg',
 
       description: 'Heavy-duty closure cap providing secure protection for stored contents.',
 
@@ -1896,7 +1896,7 @@ export const CATEGORIES = [
 
       sizes: ['Standard'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279301/glypho_caps_ni2okm.jpg',
 
       description: 'Specialized caps designed for agrochemical and glyphosate packaging containers.',
 
@@ -1920,7 +1920,7 @@ export const CATEGORIES = [
 
       sizes: ['Standard'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279302/measuring_caps_zqumph.jpg',
 
       description: 'Measurement-marked caps for accurate dispensing of liquid products.',
 
@@ -1953,7 +1953,7 @@ export const CATEGORIES = [
 
       sizes: ['500ml'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279269/0.5_ltr_blue_otd1ax.jpg',
 
       description: 'Compact HDPE bottle suitable for cleaning and liquid products.',
 
@@ -1977,7 +1977,7 @@ export const CATEGORIES = [
 
       sizes: ['500ml', '1L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279261/0.5ltr_1ltr_blue_dinip0.jpg',
 
       description: 'Available in multiple capacities for household cleaning products.',
 
@@ -2001,7 +2001,7 @@ export const CATEGORIES = [
 
       sizes: ['1L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279269/1_ltr_blue_hqmroq.jpg',
 
       description: 'Large-capacity bottle for cleaning and disinfectant liquids.',
 
@@ -2025,7 +2025,7 @@ export const CATEGORIES = [
 
       sizes: ['1L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279268/1_ltr_harpic_rpwwnk.jpg',
 
       description: 'Special nozzle bottle designed for toilet cleaning solutions.',
 
@@ -2049,7 +2049,7 @@ export const CATEGORIES = [
 
       sizes: ['1L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279266/1_ltr_sunshine_u1joac.jpg',
 
       description: 'Cleaning liquid bottle suitable for household and commercial use.',
 
@@ -2073,7 +2073,7 @@ export const CATEGORIES = [
 
       sizes: ['Standard'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279262/76_ei1wzi.jpg',
 
       description: 'Bottle with 76mm closure suitable for liquid packaging.',
 
@@ -2097,7 +2097,7 @@ export const CATEGORIES = [
 
       sizes: ['500ml'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279267/500ml_harpic_n9pioy.jpg',
 
       description: 'Compact toilet cleaner bottle with angled nozzle.',
 
@@ -2121,7 +2121,7 @@ export const CATEGORIES = [
 
       sizes: ['500ml', '1L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279263/harpic_500ml_1ltr_ua7yhg.jpg',
 
       description: 'Available in multiple sizes for toilet cleaning products.',
 
@@ -2145,7 +2145,7 @@ export const CATEGORIES = [
 
       sizes: ['250ml', '500ml', '1L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279265/lizol_bottle_hsw6lf.jpg',
 
       description: 'HDPE bottles designed for floor cleaners and disinfectants.',
 
@@ -2169,7 +2169,7 @@ export const CATEGORIES = [
 
       sizes: ['5L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279265/oval_lrpgas.jpg',
 
       description: 'Large capacity oval container for bulk liquid storage.',
 
@@ -2193,7 +2193,7 @@ export const CATEGORIES = [
 
       sizes: ['250ml', '500ml'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279264/spray_bottlres_es4pci.jpg',
 
       description: 'Spray bottle designed for sanitizers, cleaners, and liquid solutions.',
 
@@ -2226,7 +2226,7 @@ export const CATEGORIES = [
 
       sizes: ['20L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279258/20_ltr_sqaure_can_fssk21.jpg',
 
       description: 'Square-shaped industrial container offering efficient storage and stacking.',
 
@@ -2250,7 +2250,7 @@ export const CATEGORIES = [
 
       sizes: ['20L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279260/20ltr_cross_handle_Taiwan_v7vono.jpg',
 
       description: 'Industrial container with cross-handle design for easy carrying and handling.',
 
@@ -2274,7 +2274,7 @@ export const CATEGORIES = [
 
       sizes: ['25L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279256/25_ltr_mauzer_isjnmj.jpg',
 
       description: 'Durable Mauzer-style container for industrial liquid storage and transport.',
 
@@ -2298,7 +2298,7 @@ export const CATEGORIES = [
 
       sizes: ['35L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279258/35_ltrs_Blue_Cans_qcecl2.jpg',
 
       description: 'Large-capacity blue HDPE container for industrial and commercial applications.',
 
@@ -2322,7 +2322,7 @@ export const CATEGORIES = [
 
       sizes: ['35L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279259/35_ltrs_pejae4.jpg',
 
       description: 'Heavy-duty Mauzer container designed for industrial storage requirements.',
 
@@ -2346,7 +2346,7 @@ export const CATEGORIES = [
 
       sizes: ['35L'],
 
-      image: '',
+      image: 'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782279256/35_ltrs_Mauzer_aklule.jpg',
 
       description: 'Strong HDPE bulk container suitable for storing and transporting industrial liquids.',
 
