@@ -4,6 +4,7 @@
  * Props:
  *   screws   : boolean  — show corner accent dots (default: true)
  *   vents    : boolean  — show top-right accent lines (default: false)
+ *   frameLines: boolean — show subtle horizontal/vertical divider lines (default: false)
  *   hoverable: boolean  — enable lift on hover (default: true)
  *   padding  : 'none' | 'sm' | 'md' | 'lg'  (default: 'md')
  *   as       : element tag (default: 'div')
@@ -21,8 +22,6 @@ function Screw({ className = '' }) {
         opacity: 0.25,
       }}
     />
-
-    
   );
 }
 
@@ -61,6 +60,7 @@ const PADDING = {
 export default function Card({
   screws = true,
   vents = false,
+  frameLines = false,
   hoverable = true,
   padding = 'md',
   as: Tag = 'div',
@@ -72,7 +72,7 @@ export default function Card({
   return (
     <Tag
       className={[
-        'relative overflow-hidden',
+        'relative overflow-hidden isolate min-w-0',
         'bg-white rounded-[16px]',
         'border border-[#E2E8F0]',
         /* Transitions */
@@ -102,6 +102,14 @@ export default function Card({
 
       {/* ── Vent lines ── */}
       {vents && <Vents />}
+
+      {/* ── Subtle divider lines ── */}
+      {frameLines && (
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <span className="absolute left-4 right-4 top-4 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent" />
+          <span className="absolute left-4 top-4 bottom-4 w-px bg-gradient-to-b from-transparent via-slate-300/70 to-transparent" />
+        </div>
+      )}
 
       {/* ── Shine sweep overlay on hover ── */}
       {hoverable && (

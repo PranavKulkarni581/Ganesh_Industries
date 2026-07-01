@@ -300,9 +300,16 @@ export default function HomePage() {
             subtitle="Ganesh Plasto Pack Barshi - Best HDPE Jerry Can Manufacturer & Supplier with decades of manufacturing excellence reflected in every unit we produce."
           />
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {STATS.map(({ icon: Icon, value, label, sub }, i) => (
-              <Card key={label} screws vents padding="lg" className={`flex flex-col items-center text-center gap-4 reveal reveal-delay-${i + 1}`}>
+              <Card
+                key={label}
+                screws={false}
+                vents={false}
+                frameLines
+                padding="lg"
+                className={`flex h-full min-h-[200px] flex-col items-center justify-center text-center gap-4 reveal reveal-delay-${i + 1}`}
+              >
                 <IconContainer
                   size="lg"
                   variant="recessed"
@@ -480,13 +487,15 @@ export default function HomePage() {
             subtitle="Versatile packaging solutions tailored to the precise demands of each industry."
           />
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
             {INDUSTRIES.map(({ icon: Icon, label }) => (
               <Card
                 key={label}
                 screws={false}
+                vents={false}
+                frameLines
                 padding="md"
-                className="flex flex-col items-center gap-4 text-center cursor-default"
+                className="flex h-full min-h-[160px] flex-col items-center justify-center gap-4 text-center cursor-default"
               >
                 <IconContainer
                   size="lg"
