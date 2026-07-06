@@ -94,7 +94,7 @@ export default function HomePage() {
 
   // Hero carousel images (right column)
   const heroCarouselImages = [
-    'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782221506/ChatGPT_Image_Jun_23_2026_07_01_02_PM_cvytfg.png',
+    'https://res.cloudinary.com/dlh5prjhb/image/upload/v1783338994/ChatGPT_Image_Jul_6_2026_05_25_35_PM_vjnoze.png',
     'https://res.cloudinary.com/dlh5prjhb/image/upload/v1782219316/ChatGPT_Image_Jun_23_2026_06_23_03_PM_ngja5n.png',
     'https://res.cloudinary.com/dlh5prjhb/image/upload/v1779696819/ChatGPT_Image_May_25_2026_11_35_57_AM_tmk1wr.png',
   ];
